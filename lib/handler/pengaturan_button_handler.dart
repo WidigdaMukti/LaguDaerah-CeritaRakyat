@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'dart:async';
 import 'package:volume_control/volume_control.dart';
 
@@ -29,11 +30,27 @@ class _SettingsDialogState extends State<SettingsDialog> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text('Pengaturan Volume'),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(24),
+        // side: BorderSide(
+        //   color: Colors.blue, // Warna stroke
+        //   width: 2, // Lebar stroke
+        // ),
+      ),
+      title: Text(
+        'Pengaturan Volume',
+        style: GoogleFonts.poppins(fontSize: 20, fontWeight: FontWeight.bold),
+      ),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          Text('Geser slider untuk mengatur volume:'),
+          Text(
+            'Geser slider untuk mengatur volume:',
+            style: GoogleFonts.poppins(
+              fontSize: 14,
+            ),
+          ),
+          SizedBox(height: 32),
           Slider(
             value: _val,
             min: 0,
@@ -58,7 +75,10 @@ class _SettingsDialogState extends State<SettingsDialog> {
           onPressed: () {
             Navigator.of(context).pop();
           },
-          child: Text('Tutup'),
+          child: Text(
+            'Tutup',
+            style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+          ),
         ),
       ],
     );

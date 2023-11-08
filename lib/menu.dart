@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'cerita_rakyat.dart'; // Import file cerita_rakyat.dart
 import 'lagu_daerah.dart'; // Import file lagu_daerah.dart
 
@@ -12,7 +13,20 @@ class _MenuScreenState extends State<MenuScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Menu'),
+        backgroundColor: Colors.transparent, // Transparent background
+        elevation: 0, // No shadow
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back,
+            color: Colors.black,
+          ),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+        title: Text('Menu',
+            style: GoogleFonts.poppins(
+                fontWeight: FontWeight.bold, color: Colors.black)),
         centerTitle: true,
       ),
       body: Center(
@@ -36,10 +50,8 @@ class _MenuScreenState extends State<MenuScreen> {
                 ),
                 child: Text(
                   'Lagu Daerah',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black,
-                  ),
+                  style: GoogleFonts.poppins(
+                      fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ),
             ),
@@ -61,10 +73,8 @@ class _MenuScreenState extends State<MenuScreen> {
                 ),
                 child: Text(
                   'Cerita Rakyat',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black,
-                  ),
+                  style: GoogleFonts.poppins(
+                      fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ),
             ),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DetailCeritaRakyatPage extends StatelessWidget {
   final Map<String, dynamic> ceritaData;
@@ -9,7 +11,20 @@ class DetailCeritaRakyatPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(ceritaData['judul']),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back,
+            color: Colors.black,
+          ),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+        title: Text(ceritaData['judul'],
+            style: GoogleFonts.poppins(
+                fontWeight: FontWeight.bold, color: Colors.black)),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -21,12 +36,7 @@ class DetailCeritaRakyatPage extends StatelessWidget {
               if (cerita['teks'] != null)
                 Container(
                   padding: EdgeInsets.all(16.0),
-                  child: Text(
-                    cerita['teks'],
-                    style: TextStyle(
-                      fontSize: 16.0,
-                    ),
-                  ),
+                  child: Text(cerita['teks'], style: GoogleFonts.poppins()),
                 ),
               if (cerita['gambar'] != null)
                 Container(
@@ -40,38 +50,33 @@ class DetailCeritaRakyatPage extends StatelessWidget {
             if (ceritaData['moral'] != null)
               Container(
                 padding: EdgeInsets.all(16.0),
-                child: Text(
-                  'Moral dari Cerita',
-                  style: TextStyle(
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            if (ceritaData['moral'] != null)
-              Container(
-                padding: EdgeInsets.all(16.0),
-                child: Text(
-                  ceritaData['moral'],
-                  style: TextStyle(
-                    fontSize: 16.0,
-                  ),
-                ),
+                child: Text('Moral dari Cerita',
+                    style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.bold, fontSize: 20)),
               ),
             if (ceritaData['video'] != '-')
               Container(
                 padding: EdgeInsets.all(16.0),
                 child: ElevatedButton(
-                  onPressed: () {
-                    // Aksi saat tombol "Video" ditekan
+                  onPressed: () async {
                     String videoLink = ceritaData['video'];
                     if (videoLink != '-') {
-                      // Buka video di sini, misalnya dengan URL launcher
-                      // Anda harus mengimpor package url_launcher.
-                      // Buka video dalam aplikasi YouTube atau aplikasi video lainnya.
+                      if (await canLaunch(videoLink)) {
+                        await launch(videoLink);
+                      } else {
+                        // Tautan tidak dapat diluncurkan, tambahkan penanganan kesalahan di sini
+                      }
                     }
                   },
-                  child: Text('Tonton Video'),
+                  child: Text(
+                    'Tonton Video',
+                    style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
                 ),
               ),
           ],

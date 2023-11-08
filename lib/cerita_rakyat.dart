@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:google_fonts/google_fonts.dart';
 import 'detail_cerita.dart';
 
 void main() {
@@ -42,7 +43,20 @@ class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cerita Rakyat'),
+        backgroundColor: Colors.transparent, // Transparent background
+        elevation: 0, // No shadow
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back,
+            color: Colors.black,
+          ),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+        title: Text('Cerita Rakyat',
+            style: GoogleFonts.poppins(
+                fontWeight: FontWeight.bold, color: Colors.black)),
         centerTitle: true,
       ),
       body: Column(
@@ -53,7 +67,10 @@ class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
               itemBuilder: (context, index) {
                 final cerita = ceritaRakyatData[index];
                 return ListTile(
-                  title: Text(cerita['judul']),
+                  title: Text(
+                    cerita['judul'],
+                    style: GoogleFonts.poppins(),
+                  ),
                   onTap: () {
                     Navigator.push(
                       context,
