@@ -55,12 +55,11 @@ class _VideoHandlerState extends State<VideoHandler> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
+        backgroundColor: Colors.blue,
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,
-            color: Colors.black,
+            color: Colors.white,
           ),
           onPressed: () {
             Navigator.of(context).pop();
@@ -70,14 +69,14 @@ class _VideoHandlerState extends State<VideoHandler> {
           IconButton(
             icon: Icon(
               Icons.refresh,
-              color: Colors.black,
+              color: Colors.white,
             ),
             onPressed: refreshPage,
           ),
           IconButton(
             icon: Icon(
               Icons.open_in_browser,
-              color: Colors.black,
+              color: Colors.white,
             ),
             onPressed: openVideoLink,
           ),

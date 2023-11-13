@@ -16,11 +16,18 @@ void showAboutDialog(BuildContext context) {
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            ClipRRect(borderRadius: BorderRadius.circular(12)),
-            Image.asset(
-              'assets/perancang.jpg',
-              height: 200,
-              width: 150,
+            Stack(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Image.asset(
+                    'assets/perancang.jpg',
+                    height: 200,
+                    width: 150,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ],
             ),
             SizedBox(height: 10),
             Text(

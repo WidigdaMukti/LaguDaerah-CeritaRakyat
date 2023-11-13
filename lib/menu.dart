@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'cerita_rakyat.dart'; // Import file cerita_rakyat.dart
-import 'lagu_daerah.dart'; // Import file lagu_daerah.dart
+import 'package:flutter_svg/flutter_svg.dart';
+import 'cerita_rakyat.dart';
+import 'lagu_daerah.dart';
 
 class MenuScreen extends StatefulWidget {
   @override
@@ -13,8 +14,8 @@ class _MenuScreenState extends State<MenuScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent, // Transparent background
-        elevation: 0, // No shadow
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,
@@ -35,46 +36,97 @@ class _MenuScreenState extends State<MenuScreen> {
           children: [
             GestureDetector(
               onTap: () {
-                // Navigasi ke halaman Lagu Daerah
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => LaguDaerahPage()),
                 );
               },
               child: Container(
-                padding: EdgeInsets.all(20),
+                width: 350,
+                height: 250,
                 decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.black,
-                  ),
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                      offset: Offset(0, 3),
+                    ),
+                  ],
                 ),
-                child: Text(
-                  'Lagu Daerah',
-                  style: GoogleFonts.poppins(
-                      fontSize: 20, fontWeight: FontWeight.bold),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/lagu.svg',
+                        fit: BoxFit.cover,
+                      ),
+                      Text(
+                        'Lagu Daerah',
+                        style: GoogleFonts.poppins(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            shadows: [
+                              Shadow(
+                                  color: Colors.black,
+                                  blurRadius: 2,
+                                  offset: Offset(1, 1))
+                            ]),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
             SizedBox(height: 20),
             GestureDetector(
               onTap: () {
-                // Navigasi ke halaman Cerita Rakyat
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => CeritaRakyatPage()),
                 );
               },
               child: Container(
-                padding: EdgeInsets.all(20),
+                width: 350,
+                height: 250,
                 decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.black,
-                  ),
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                      offset: Offset(0, 3),
+                    ),
+                  ],
                 ),
-                child: Text(
-                  'Cerita Rakyat',
-                  style: GoogleFonts.poppins(
-                      fontSize: 20, fontWeight: FontWeight.bold),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/cerita.svg',
+                        fit: BoxFit.cover,
+                      ),
+                      Text(
+                        'Cerita Rakyat',
+                        style: GoogleFonts.poppins(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            shadows: [
+                              Shadow(
+                                color: Colors.black,
+                                blurRadius: 2,
+                              )
+                            ]),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
