@@ -23,7 +23,15 @@ class CeritaRakyatPage extends StatefulWidget {
 }
 
 class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
-  List<dynamic> ceritaRakyatData = [];
+  Map<String, List<dynamic>?> ceritaRakyatData = {
+    'Cerita Rakyat Kurikulum': null,
+    'Cerita Rakyat Umum': null,
+  };
+
+  Map<String, bool?> isExpanded = {
+    'Cerita Rakyat Kurikulum': false,
+    'Cerita Rakyat Umum': false,
+  };
 
   @override
   void initState() {
@@ -35,7 +43,9 @@ class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
     String jsonData = await rootBundle.loadString('assets/data/cerita.json');
     Map<String, dynamic> data = json.decode(jsonData);
     setState(() {
-      ceritaRakyatData = data['cerita_rakyat'];
+      ceritaRakyatData['Cerita Rakyat Kurikulum'] =
+          data['cerita_rakyat_kurikulum'];
+      ceritaRakyatData['Cerita Rakyat Umum'] = data['cerita_rakyat_umum'];
     });
   }
 
@@ -43,8 +53,8 @@ class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent, // Transparent background
-        elevation: 0, // No shadow
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,
@@ -59,34 +69,54 @@ class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
                 fontWeight: FontWeight.bold, color: Colors.black)),
         centerTitle: true,
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: ListView.builder(
-              itemCount: ceritaRakyatData.length,
-              itemBuilder: (context, index) {
-                final cerita = ceritaRakyatData[index];
-                return ListTile(
-                  title: Text(
-                    cerita['judul'],
-                    style: GoogleFonts.poppins(),
+      body: ListView(
+        children: ceritaRakyatData.keys.map((category) {
+          return Column(
+            children: [
+              ListTile(
+                title: Text(
+                  category,
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
                   ),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) =>
-                            DetailCeritaRakyatPage(ceritaData: cerita),
-                      ),
-                    );
-                  },
-                  // Anda dapat menambahkan lebih banyak informasi tentang cerita rakyat di sini.
-                  // Contoh: Subjudul, gambar, deskripsi, dll.
-                );
-              },
-            ),
-          ),
-        ],
+                ),
+                trailing: Icon(
+                  isExpanded[category] == true
+                      ? Icons.expand_less
+                      : Icons.expand_more,
+                ),
+                onTap: () {
+                  // Toggle the visibility of the list and update the icon
+                  setState(() {
+                    isExpanded[category] = !(isExpanded[category] ?? false);
+                  });
+                },
+              ),
+              if (isExpanded[category] == true)
+                Column(
+                  children: ceritaRakyatData[category]?.map((cerita) {
+                        return ListTile(
+                          title: Text(
+                            cerita['judul'],
+                            style: GoogleFonts.poppins(),
+                          ),
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    DetailCeritaRakyatPage(ceritaData: cerita),
+                              ),
+                            );
+                          },
+                        );
+                      }).toList() ??
+                      [],
+                ),
+            ],
+          );
+        }).toList(),
       ),
     );
   }

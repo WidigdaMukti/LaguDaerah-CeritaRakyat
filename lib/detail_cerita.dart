@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'handler/vidio_handler.dart';
 
 class DetailCeritaRakyatPage extends StatelessWidget {
   final Map<String, dynamic> ceritaData;
@@ -58,14 +58,16 @@ class DetailCeritaRakyatPage extends StatelessWidget {
               Container(
                 padding: EdgeInsets.all(16.0),
                 child: ElevatedButton(
-                  onPressed: () async {
+                  onPressed: () {
                     String videoLink = ceritaData['video'];
                     if (videoLink != '-') {
-                      if (await canLaunch(videoLink)) {
-                        await launch(videoLink);
-                      } else {
-                        // Tautan tidak dapat diluncurkan, tambahkan penanganan kesalahan di sini
-                      }
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              VideoHandler(videoId: videoLink),
+                        ),
+                      );
                     }
                   },
                   child: Text(

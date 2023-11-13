@@ -3,7 +3,6 @@ import 'menu.dart';
 import 'handler/pengaturan_button_handler.dart';
 import 'handler/tentang_button_handler.dart' as AboutHandler;
 import 'handler/keluar_button_handler.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {

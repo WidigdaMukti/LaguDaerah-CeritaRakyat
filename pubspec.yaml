@@ -36,6 +36,8 @@ dependencies:
   url_launcher: ^6.2.1
   cupertino_icons: ^1.0.2
   flutter_webview_pro: ^3.0.1+4
+  youtube_player_flutter: ^8.1.2
+  flutter_inappwebview: ^5.8.0
 
 dev_dependencies:
   flutter_test:
