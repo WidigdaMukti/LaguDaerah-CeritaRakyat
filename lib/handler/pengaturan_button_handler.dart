@@ -40,6 +40,7 @@ class _SettingsDialogState extends State<SettingsDialog> {
       title: Text(
         'Pengaturan Volume',
         style: GoogleFonts.poppins(fontSize: 20, fontWeight: FontWeight.bold),
+        textAlign: TextAlign.center,
       ),
       content: Column(
         mainAxisSize: MainAxisSize.min,

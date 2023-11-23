@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'detail_lagu.dart';
 
@@ -62,59 +63,94 @@ class _LaguDaerahPageState extends State<LaguDaerahPage> {
             Navigator.of(context).pop();
           },
         ),
-        title: Text('Lagu Daerah',
-            style: GoogleFonts.poppins(
-                fontWeight: FontWeight.bold, color: Colors.black)),
+        title: Text(
+          'Lagu Daerah',
+          style: GoogleFonts.poppins(
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+          ),
+        ),
         centerTitle: true,
       ),
-      body: ListView(
-        children: laguDaerahData.keys.map((category) {
-          return Column(
-            children: [
-              ListTile(
-                title: Text(
-                  category,
-                  style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
+      body: Padding(
+        padding: EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0),
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: Align(
+                alignment: Alignment.bottomRight,
+                child: SvgPicture.asset(
+                  'assets/kids-4.svg',
+                  height: 200,
+                  width: 200,
                 ),
-                trailing: Icon(
-                  isExpanded[category] == true
-                      ? Icons.expand_less
-                      : Icons.expand_more,
-                ),
-                onTap: () {
-                  // Toggle the visibility of the list and update the icon
-                  setState(() {
-                    isExpanded[category] = !(isExpanded[category] ?? false);
-                  });
-                },
               ),
-              if (isExpanded[category] == true)
-                Column(
-                  children: laguDaerahData[category]?.map((lagu) {
-                        return ListTile(
-                          title: Text(
-                            lagu['judul'],
-                            style: GoogleFonts.poppins(),
+            ),
+            ListView(
+              children: laguDaerahData.keys.map((category) {
+                return Column(
+                  children: [
+                    SizedBox(height: 16.0), // Memberi jarak antara kategori
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(
+                            12.0), // Menambahkan border radius di sini
+                        color: Colors.blue.withOpacity(0.5),
+                      ),
+                      child: ExpansionTile(
+                        tilePadding: EdgeInsets.symmetric(
+                            horizontal: 16.0), // Padding horizontal
+                        title: Text(
+                          category,
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
                           ),
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) =>
-                                    DetailLaguPage(laguData: lagu),
-                              ),
-                            );
-                          },
-                        );
-                      }).toList() ??
-                      [],
-                ),
-            ],
-          );
-        }).toList(),
+                        ),
+                        children: laguDaerahData[category]?.map((lagu) {
+                              return InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => DetailLaguPage(
+                                        laguData: lagu,
+                                      ),
+                                    ),
+                                  );
+                                },
+                                child: Container(
+                                  // color: Colors.blue.withOpacity(
+                                  //     0.3), // Warna biru dengan opasitas 50%
+                                  padding: EdgeInsets.symmetric(
+                                      vertical: 12.0, horizontal: 16.0),
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                        child: Text(lagu['judul'],
+                                            style: GoogleFonts.poppins(
+                                                textStyle: TextStyle(
+                                                    color: Colors.white),
+                                                fontSize: 16.0)),
+                                      ),
+                                      // Icon(
+                                      //   Icons.arrow_forward,
+                                      //   color: Colors.white, // Icon putih
+                                      // ),
+                                    ],
+                                  ),
+                                ),
+                              );
+                            }).toList() ??
+                            [],
+                      ),
+                    ),
+                  ],
+                );
+              }).toList(),
+            ),
+          ],
+        ),
       ),
     );
   }

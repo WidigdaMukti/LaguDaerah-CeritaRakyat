@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
+
+void keluarAplikasi() {
+  SystemNavigator.pop();
+}
 
 Future<bool> showExitConfirmationDialog(BuildContext context) async {
   return await showDialog(
@@ -12,6 +17,7 @@ Future<bool> showExitConfirmationDialog(BuildContext context) async {
         title: Text(
           'Konfirmasi Keluar',
           style: GoogleFonts.poppins(fontWeight: FontWeight.bold, fontSize: 20),
+          textAlign: TextAlign.center,
         ),
         content: Text(
           'Apakah Anda yakin ingin keluar dari aplikasi?',
@@ -29,7 +35,7 @@ Future<bool> showExitConfirmationDialog(BuildContext context) async {
           ),
           TextButton(
             onPressed: () {
-              Navigator.of(context).pop(true); // Keluar dari aplikasi
+              keluarAplikasi(); // Keluar dari aplikasi
             },
             child: Text(
               'Ya',

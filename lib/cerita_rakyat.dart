@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'detail_cerita.dart';
 
@@ -26,11 +27,6 @@ class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
   Map<String, List<dynamic>?> ceritaRakyatData = {
     'Cerita Rakyat Kurikulum': null,
     'Cerita Rakyat Umum': null,
-  };
-
-  Map<String, bool?> isExpanded = {
-    'Cerita Rakyat Kurikulum': false,
-    'Cerita Rakyat Umum': false,
   };
 
   @override
@@ -64,59 +60,105 @@ class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
             Navigator.of(context).pop();
           },
         ),
-        title: Text('Cerita Rakyat',
-            style: GoogleFonts.poppins(
-                fontWeight: FontWeight.bold, color: Colors.black)),
+        title: Text(
+          'Cerita Rakyat',
+          style: GoogleFonts.poppins(
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+          ),
+        ),
         centerTitle: true,
       ),
-      body: ListView(
-        children: ceritaRakyatData.keys.map((category) {
-          return Column(
-            children: [
-              ListTile(
-                title: Text(
-                  category,
-                  style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
+      body: Padding(
+        padding: EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0),
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: Align(
+                alignment: Alignment.bottomLeft,
+                child: SvgPicture.asset(
+                  'assets/kids-6.svg',
+                  height: 200,
+                  width: 200,
                 ),
-                trailing: Icon(
-                  isExpanded[category] == true
-                      ? Icons.expand_less
-                      : Icons.expand_more,
-                ),
-                onTap: () {
-                  // Toggle the visibility of the list and update the icon
-                  setState(() {
-                    isExpanded[category] = !(isExpanded[category] ?? false);
-                  });
-                },
               ),
-              if (isExpanded[category] == true)
-                Column(
-                  children: ceritaRakyatData[category]?.map((cerita) {
-                        return ListTile(
-                          title: Text(
-                            cerita['judul'],
-                            style: GoogleFonts.poppins(),
-                          ),
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) =>
-                                    DetailCeritaRakyatPage(ceritaData: cerita),
-                              ),
-                            );
-                          },
-                        );
-                      }).toList() ??
-                      [],
+            ),
+            Positioned.fill(
+              child: Align(
+                alignment: Alignment.bottomRight,
+                child: SvgPicture.asset(
+                  'assets/kids-5.svg',
+                  height: 170,
+                  width: 170,
                 ),
-            ],
-          );
-        }).toList(),
+              ),
+            ),
+            ListView(
+              children: ceritaRakyatData.keys.map((category) {
+                return Column(
+                  children: [
+                    SizedBox(height: 16.0), // Memberi jarak antara kategori
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(
+                            12.0), // Menambahkan border radius di sini
+                        color: Colors.blue.withOpacity(0.5),
+                      ),
+                      child: ExpansionTile(
+                        tilePadding: EdgeInsets.symmetric(
+                            horizontal: 16.0), // Padding horizontal
+                        title: Text(
+                          category,
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        children: ceritaRakyatData[category]?.map((cerita) {
+                              return InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          DetailCeritaRakyatPage(
+                                        ceritaData: cerita,
+                                      ),
+                                    ),
+                                  );
+                                },
+                                child: Container(
+                                  // color: Colors.blue.withOpacity(
+                                  //     0.3), // Warna biru dengan opasitas 50%
+                                  padding: EdgeInsets.symmetric(
+                                      vertical: 12.0, horizontal: 16.0),
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                        child: Text(cerita['judul'],
+                                            style: GoogleFonts.poppins(
+                                                textStyle: TextStyle(
+                                                    color: Colors.white),
+                                                fontSize: 16.0)),
+                                      ),
+                                      // Icon(
+                                      //   Icons.arrow_forward,
+                                      //   color: Colors.white, // Icon putih
+                                      // ),
+                                    ],
+                                  ),
+                                ),
+                              );
+                            }).toList() ??
+                            [],
+                      ),
+                    ),
+                  ],
+                );
+              }).toList(),
+            ),
+          ],
+        ),
       ),
     );
   }

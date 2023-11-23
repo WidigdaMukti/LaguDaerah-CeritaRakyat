@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'handler/audio_handler.dart';
 
 class DetailLaguPage extends StatelessWidget {
   final Map<String, dynamic> laguData;
@@ -106,15 +107,28 @@ class DetailLaguPage extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {
                   // Aksi saat tombol "Audio Link" ditekan
-                  String audioLink = laguData['audio'];
-                  if (audioLink != '-') {
-                    // Lakukan sesuatu dengan audioLink
-                    print('Audio Link: $audioLink');
+                  String audio = laguData['audio'];
+                  if (audio != '-') {
+                    showBottomSheetFunction(context, laguData);
+                  } else {
+                    // Kasus ketika audioLink adalah '-'
+                    print('Audio Kosong');
                   }
                 },
-                child: Text(
-                  'Audio Link',
-                  style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    SizedBox(width: 8.0), // Memberi jarak antara ikon dan teks
+                    Text(
+                      'Play Audio',
+                      style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+                    ),
+                    Icon(
+                      Icons.play_arrow,
+                      color: Colors.white,
+                    ),
+                  ],
                 ),
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(

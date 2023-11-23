@@ -12,6 +12,7 @@ void showAboutDialog(BuildContext context) {
         title: Text(
           'Tentang Aplikasi',
           style: GoogleFonts.poppins(fontWeight: FontWeight.bold, fontSize: 20),
+          textAlign: TextAlign.center,
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,

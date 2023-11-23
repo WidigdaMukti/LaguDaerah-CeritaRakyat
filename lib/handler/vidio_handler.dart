@@ -55,7 +55,8 @@ class _VideoHandlerState extends State<VideoHandler> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,
@@ -82,6 +83,7 @@ class _VideoHandlerState extends State<VideoHandler> {
           ),
         ],
       ),
+      backgroundColor: Colors.black,
       body: Center(
         child: YoutubePlayer(
           controller: _controller,

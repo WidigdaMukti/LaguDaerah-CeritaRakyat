@@ -1,141 +1,139 @@
 {
-  "lagu_daerah_kurikulum": [
+  "Lagu_Daerah_Berdasarkan_Kurikulum": [
     {
-      "judul": "Cublak-Cublak Suweng",
-      "informasi_lagu": "Pencipta: Sunan Giri",
-      "lirik": "Cublak cublak suweng\nSuwenge tinggelenter\nMambu ketudhung gudhel\nPak gempong lera lere\nSapa ngguyu ndelikake\nSir sir pong dele gosong\nSir sir pong dele gosong",
-      "terjemahan": "Tempat Suweng\nSuweng-nya berserakan\nBaunya dituju anak Kerbau\nBapak ompong menengok kanan kiri\nSiapa tertawa dia yg menyembunyikan\nHati nurani kedelai kosong tanpa isi\nHati nurani kedelai kosong tanpa isi",
-      "not_angka": "assets/lagu/3.CUBLAK-CUBLAK-SUWENG.jpg",
-      "audio": "-",
-      "makna": "Tentang ajaran moral hubungan manusia dengan Tuhan. Syair tersebut juga memiliki nilai moral ajaran moral manusia dengan dirinya sendiri dan dengan alam. Selain itu, mengandung pesan agar manusia tidak menuruti hawa nafsunya dan berambisi mencari harta. Sebagaimana umat beragama hendaknya kembali ke hati nurani yang suci."
+      "Judul": "Cublak-Cublak Suweng",
+      "Informasi_Lagu": "Pencipta: Sunan Giri",
+      "Lirik": "Cublak cublak suweng\nSuwenge tinggelenter\nMambu ketudhung gudhel\nPak gempong lera lere\nSapa ngguyu ndelikake\nSir sir pong dele gosong\nSir sir pong dele gosong",
+      "Terjemahan": "Tempat Suweng\nSuweng-nya berserakan\nBaunya dituju anak Kerbau\nBapak ompong menengok kanan kiri\nSiapa tertawa dia yg menyembunyikan\nHati nurani kedelai kosong tanpa isi\nHati nurani kedelai kosong tanpa isi",
+      "Not_Angka": "assets/lagu/3.CUBLAK-CUBLAK-SUWENG.jpg",
+      "Audio": "assets/audio/Cublak-Cublak-Suweng.mp3",
+      "Makna": "Tentang ajaran moral hubungan manusia dengan Tuhan. Syair tersebut juga memiliki nilai moral ajaran moral manusia dengan dirinya sendiri dan dengan alam. Selain itu, mengandung pesan agar manusia tidak menuruti hawa nafsunya dan berambisi mencari harta. Sebagaimana umat beragama hendaknya kembali ke hati nurani yang suci."
     },
     {
-      "judul": "Gundul-Gundul Pacul",
-      "informasi_lagu": "Pencipta: Sunan Kalijaga dan dibantu R.C Hardjosubroto",
-      "lirik": "Gundul-gundul pacul cul gembelengan\nNyunggi-nyunggi wakul kul gembelengan\nWakul ngglimpang segane dadi sak ratan\nWakul ngglimpang segane dadi sak ratan",
-      "terjemahan": "Gundul gundul cangkul sembrono\nMembawa bakul (di atas kepala) (dengan) sembrono\nBakul terguling, nasinya tumpah sehalaman\nBakul terguling, nasinya tumpah sehalaman",
-      "not_angka": "assets/lagu/6.GUNDUL-GUNDUL-PACUL.png",
-      "audio": "-",
-      "makna": "Lagu ini mengingatkan orang-orang agar selalu hidup bersahaja. Kata “gembelengan” yang terdapat di dalam lirik lagu berarti pongah, sombong, atau besar kepala. Menurut falsafah hidup masyarakat Jawa, semua orang akan menanggung akibat dari perbuatan buruk yang dilakukan. "
+      "Judul": "Gundul-Gundul Pacul",
+      "Informasi_Lagu": "Pencipta: Sunan Kalijaga dan dibantu R.C Hardjosubroto",
+      "Lirik": "Gundul-gundul pacul cul gembelengan\nNyunggi-nyunggi wakul kul gembelengan\nWakul ngglimpang segane dadi sak ratan\nWakul ngglimpang segane dadi sak ratan",
+      "Terjemahan": "Gundul gundul cangkul sembrono\nMembawa bakul (di atas kepala) (dengan) sembrono\nBakul terguling, nasinya tumpah sehalaman\nBakul terguling, nasinya tumpah sehalaman",
+      "Not_Angka": "assets/lagu/6.GUNDUL-GUNDUL-PACUL.png",
+      "Audio": "assets/audio/Gundul-Pacul.mp3",
+      "Makna": "Lagu ini mengingatkan orang-orang agar selalu hidup bersahaja. Kata “gembelengan” yang terdapat di dalam lirik lagu berarti pongah, sombong, atau besar kepala. Menurut falsafah hidup masyarakat Jawa, semua orang akan menanggung akibat dari perbuatan buruk yang dilakukan. "
     },
     {
-      "judul": "Jamuran",
-      "informasi_lagu": "Pencipta: Ki Hadi Sukatno",
-      "lirik": "‘Jamuran’ ya ge ge thok\nJamur apa ya ge ge thok\nJamur gajih mbejijih sak ara-ara\nSira mbadhe jamur apa?",
-      "terjemahan": "‘Jamuran’ nya ya dibuat pura-pura\nJamur apa ya dibuat pura-pura\nJamur gajih mengotori seluruh lapangan\nKamu mau jamur apa?",
-      "not_angka": "assets/lagu/7.JAMURAN.png",
-      "audio": "-",
-      "makna": "Lagu dan permainan Jamuran memiliki makna bahwa setiap orang harus mengikuti perintah sang pemimpin. Permainan ini tidak hanya sebagai media hiburan, tapi juga mengajarkan banyak hal pada anak-anak. Seperti mendorong anak-anak untuk bersosialisasi, melatih anak agar cepat tanggap, serta mengajarkan kerja sama dan kebersamaan."
+      "Judul": "Jamuran",
+      "Informasi_Lagu": "Pencipta: Ki Hadi Sukatno",
+      "Lirik": "‘Jamuran’ ya ge ge thok\nJamur apa ya ge ge thok\nJamur gajih mbejijih sak ara-ara\nSira mbadhe jamur apa?",
+      "Terjemahan": "‘Jamuran’ nya ya dibuat pura-pura\nJamur apa ya dibuat pura-pura\nJamur gajih mengotori seluruh lapangan\nKamu mau jamur apa?",
+      "Not_Angka": "assets/lagu/7.JAMURAN.png",
+      "Audio": "assets/audio/Jamuran.mp3",
+      "Makna": "Lagu dan permainan Jamuran memiliki makna bahwa setiap orang harus mengikuti perintah sang pemimpin. Permainan ini tidak hanya sebagai media hiburan, tapi juga mengajarkan banyak hal pada anak-anak. Seperti mendorong anak-anak untuk bersosialisasi, melatih anak agar cepat tanggap, serta mengajarkan kerja sama dan kebersamaan."
     },
     {
-      "judul": "Lir Ilir",
-      "informasi_lagu": "Pencipta: Sunan Kalijaga",
-      "lirik": "Lir ilir lir ilir tandure wong sumilir\nTak ijo royo royo\nTak sengguh panganten anyar\nCah angon cah angon penekna blimbing kuwi\nLunyu lunyu penekna kanggo mbasuh dodotira\nDodotira dodotira kumintir bedah ing pinggir\nDondomana jrumatana kanggo seba mengko sore\nMumpung padang rembulane\nMumpung jembar kalangane\nSun suraka surak hiyo",
-      "terjemahan": "Bangunlah, bangunlah tanaman sudah bersemi\nDemikian menghijau \nBagaikan pengantinbaru\nAnak gembala, anak gembala panjatlah pohon belimbing itu\nWalau licin dan susah tetaplah kau panjat untuk membasuh pakaianmu\nPakaianmu, pakaianmu terkoyak-koyak dibagian samping\nJahitlah, benahilah untuk menghadap nanti sore\nSelagi bulan bersinar terang\nSelagi banyak waktu luang\nAyo bersoraklah dengan sorakan iya",
-      "not_angka": "assets/lagu/9.LIR-ILIR.jpg",
-      "audio": "-",
-      "makna": "Tentang ajakan bangun dari keterpurukan maupun sifat malas dan mempertebal keimanan yang telah ditanamkan oleh Allah Swt dalam diri, karena itu diumpamakan dengan kata “Tandure wis sumilir” atau tanaman yang mulai bersemi dan pohon-pohon yang mulai menghijau."
+      "Judul": "Lir Ilir",
+      "Informasi_Lagu": "Pencipta: Sunan Kalijaga",
+      "Lirik": "Lir ilir lir ilir tandure wong sumilir\nTak ijo royo royo\nTak sengguh panganten anyar\nCah angon cah angon penekna blimbing kuwi\nLunyu lunyu penekna kanggo mbasuh dodotira\nDodotira dodotira kumintir bedah ing pinggir\nDondomana jrumatana kanggo seba mengko sore\nMumpung padang rembulane\nMumpung jembar kalangane\nSun suraka surak hiyo",
+      "Terjemahan": "Bangunlah, bangunlah tanaman sudah bersemi\nDemikian menghijau \nBagaikan pengantinbaru\nAnak gembala, anak gembala panjatlah pohon belimbing itu\nWalau licin dan susah tetaplah kau panjat untuk membasuh pakaianmu\nPakaianmu, pakaianmu terkoyak-koyak dibagian samping\nJahitlah, benahilah untuk menghadap nanti sore\nSelagi bulan bersinar terang\nSelagi banyak waktu luang\nAyo bersoraklah dengan sorakan iya",
+      "Not_Angka": "assets/lagu/9.LIR-ILIR.jpg",
+      "Audio": "assets/audio/Lir-Ilir.mp3",
+      "Makna": "Tentang ajakan bangun dari keterpurukan maupun sifat malas dan mempertebal keimanan yang telah ditanamkan oleh Allah Swt dalam diri, karena itu diumpamakan dengan kata “Tandure wis sumilir” atau tanaman yang mulai bersemi dan pohon-pohon yang mulai menghijau."
     },
     {
-      "judul": "Menthok Menthok",
-      "informasi_lagu": "Pencipta: R.C Hardjosubroto",
-      "lirik": "Menthok … menthok … tak kandhani\nMung rupamu angisin-isini\nMbokya aja ngetok\nAna kandhang wae\nEnak-enak ngorok\nOra nyambut gawe\nMenthok-menthok mung lakumu\nMegal-megol gawe guyu",
-      "terjemahan": "Menthok (Itik)… menthok (Itik)…  tak kasih tahu\nEkspresi wajahmu terlihat memalukan\nJanganlah keluar\nDi dalam kandang saja\nEnak-enak tidur mendengkur\nTidak bekerja\nMenthok (Itik)… menthok (Itik)…  cara berjalanmu\nMegal-megol membuat tertawa",
-      "not_angka": "assets/lagu/10.MENTHOK-MENTHOK.png",
-      "audio": "-",
-      "makna": "Lagu ini berisikan nasihat bagi manusia hendaknya bersikap aktif, tidak hanya tidur, dan beraktifitas secara produktif. Tidur ataupun istirahat bisa dilakukan setelah bekerja dan berkarya. Dalam bekerja juga harus cekatan atau gesit agar mendapatkan hasil yang maksimal. "
+      "Judul": "Menthok Menthok",
+      "Informasi_Lagu": "Pencipta: R.C Hardjosubroto",
+      "Lirik": "Menthok … menthok … tak kandhani\nMung rupamu angisin-isini\nMbokya aja ngetok\nAna kandhang wae\nEnak-enak ngorok\nOra nyambut gawe\nMenthok-menthok mung lakumu\nMegal-megol gawe guyu",
+      "Terjemahan": "Menthok (Itik)… menthok (Itik)…  tak kasih tahu\nEkspresi wajahmu terlihat memalukan\nJanganlah keluar\nDi dalam kandang saja\nEnak-enak tidur mendengkur\nTidak bekerja\nMenthok (Itik)… menthok (Itik)…  cara berjalanmu\nMegal-megol membuat tertawa",
+      "Not_Angka": "assets/lagu/10.MENTHOK-MENTHOK.png",
+      "Audio": "assets/audio/Menthok-Menthok.mp3",
+      "Makna": "Lagu ini berisikan nasihat bagi manusia hendaknya bersikap aktif, tidak hanya tidur, dan beraktifitas secara produktif. Tidur ataupun istirahat bisa dilakukan setelah bekerja dan berkarya. Dalam bekerja juga harus cekatan atau gesit agar mendapatkan hasil yang maksimal. "
     },
     {
-      "judul": "Padhang Bulan",
-      "informasi_lagu": "Pencipta: Sunan Giri",
-      "lirik": "Yo pra kanca dolanan ing njaba\nPadhang wulan padhange kaya rina\nRembulane e sing awe-awe\nNgelingake aja padha turu sore\nYo ‘pra kanca dolanan ing jaba\nRame-rame kene akeh kancane\nLangite pancen sumebyar rina\nYo padha dolanan sinambi guyonan",
-      "terjemahan": "Ayo teman, [kita] bermain di luar\nSinar bulan terangnya seperti fajar\nBulannya menampakkan pesona\nMengingatkan [kita agar] jangan tidur di sore hari\nAyo teman-teman bermain di luar\nRame rame di sini banyak temannya\nLangitnya memang terang seperti fajar\nAyo bermain sembari bercanda",
-      "not_angka": "assets/lagu/11.PADHANG-BULAN.png",
-      "audio": "-",
-      "makna": "Mengajarkan gotong royong dan solidaritas antara teman sepermainan. Selain itu, mengingatkan nilai religius yaitu mengingatkan agar anak-anak tidak tidur di waktu sore menjelang malam karena waktu siang hingga sore adalah waktunya terjaga untuk belajar atau beribadah."
+      "Judul": "Padhang Bulan",
+      "Informasi_Lagu": "Pencipta: Sunan Giri",
+      "Lirik": "Yo pra kanca dolanan ing njaba\nPadhang wulan padhange kaya rina\nRembulane e sing awe-awe\nNgelingake aja padha turu sore\nYo ‘pra kanca dolanan ing jaba\nRame-rame kene akeh kancane\nLangite pancen sumebyar rina\nYo padha dolanan sinambi guyonan",
+      "Terjemahan": "Ayo teman, [kita] bermain di luar\nSinar bulan terangnya seperti fajar\nBulannya menampakkan pesona\nMengingatkan [kita agar] jangan tidur di sore hari\nAyo teman-teman bermain di luar\nRame rame di sini banyak temannya\nLangitnya memang terang seperti fajar\nAyo bermain sembari bercanda",
+      "Not_Angka": "assets/lagu/11.PADHANG-BULAN.png",
+      "Audio": "assets/audio/Padhang-Bulan.mp3",
+      "Makna": "Mengajarkan gotong royong dan solidaritas antara teman sepermainan. Selain itu, mengingatkan nilai religius yaitu mengingatkan agar anak-anak tidak tidur di waktu sore menjelang malam karena waktu siang hingga sore adalah waktunya terjaga untuk belajar atau beribadah."
     },
     {
-      "judul": "Sluku-Sluku Bathok",
-      "informasi_lagu": "Pencipta: Sunan Kalijaga",
-      "lirik": "Sluku-sluku bathok \nBathoke ela-elo \nSi Rama menyang Solo \nLeh olehe payung mutho \nMak jentit lho-lho lobah \nWong mati ora obah \nYen obah medeni bocah \nYen urip goleka duwit",
-      "terjemahan": "Ayun-ayun kepala \nKepalanya geleng-geleng \nBapak pergi ke Solo \nOleh-olehnya payung mutha \nTiba-tiba bergerak\nOrang meninggal tidak bergerak \nKalau bergerak menakuti orang \nKalau hidup carilah uang",
-      "not_angka": "-",
-      "audio": "-",
-      "makna": "Bahwa hidup bukan hanya soal bekerja, namun ada kalanya seseorang perlu mengistirahatkan pikirannya agar jiwa dan raganya esok hari dapat bekerja kembali dengan maksimal. Lagu ini diciptakan oleh Sunan Kalijaga untuk menyebarkan ajaran agama Islam agar lebih mudah diterima oleh masyarakat."
+      "Judul": "Sinom",
+      "Informasi_Lagu": "Pencipta: Sunan Muria",
+      "Lirik": "Amenangi jaman edan\nEwuh aja ing pambudi\nMelu edan ora tahan\nYen tan melu anglakoni\nBoya kaduman melik kaliren\nWekasanipun dilalah karsa Allah\nBegjane kang lali\nLuwih begja kang engling lan waspada",
+      "Terjemahan": "Mengalami zaman gila\nSulit dalam pikiran\nIkut gila enggak tahan\nKalau enggak ikut melakoni\nTak dapat bagian apa-apa kelaparan akhirnya\nUntungnya kehendak Allah\nSebaik-baiknya orang lupa\nLebih beruntung yang senantiasa ingat dan waspada",
+      "Not_Angka": "-",
+      "Audio": "assets/audio/Sinom.mp3",
+      "Makna": "Sinom atau sinoman berarti sekumpulan anak muda. Lagu Sinom ini menceritakan tentang kehidupan anak-anak remaja yang sedang dalam masa pubertas dan berada di tahap pencarian jati diri. Selain itu, mengandung nasihat agar anak muda selalu bijak dalam bertingkah laku."
+    },
+    {
+      "Judul": "Sluku-Sluku Bathok",
+      "Informasi_Lagu": "Pencipta: Sunan Kalijaga",
+      "Lirik": "Sluku-sluku bathok \nBathoke ela-elo \nSi Rama menyang Solo \nLeh olehe payung mutho \nMak jentit lho-lho lobah \nWong mati ora obah \nYen obah medeni bocah \nYen urip goleka duwit",
+      "Terjemahan": "Ayun-ayun kepala \nKepalanya geleng-geleng \nBapak pergi ke Solo \nOleh-olehnya payung mutha \nTiba-tiba bergerak\nOrang meninggal tidak bergerak \nKalau bergerak menakuti orang \nKalau hidup carilah uang",
+      "Audio": "assets/audio/Sluku-Sluku-Bathok.mp3",
+      "Makna": "Bahwa hidup bukan hanya soal bekerja, namun ada kalanya seseorang perlu mengistirahatkan pikirannya agar jiwa dan raganya esok hari dapat bekerja kembali dengan maksimal. Lagu ini diciptakan oleh Sunan Kalijaga untuk menyebarkan ajaran agama Islam agar lebih mudah diterima oleh masyarakat."
     }
   ],
-  "lagu_daerah_umum": [
+  "Lagu_Daerah_Umum": [
     {
-      "judul": "Andhe Andhe Lumut",
-      "informasi_lagu": "Pencipta: Anjar Jani",
-      "lirik": "Putraku si Ande, Ande, Ande Lumut\nTemuruna ana putri kang unggah-unggahi\nPutrine ngger, kang ayu rupane\nKlenthing abang iku kang dadi asmane\n    Duh ibu, kula dereng burun\n    Duh ibu, kula mboten medun\n    Nadyan ayu sisane si Yuyu Kangkang\nPutraku si Ande, Ande, Ande Lumut\nTemuruna ana putri kang unggah-unggahi\nPutrine ngger, kang ayu rupane\nKlenthing ijo iku kang dadi asmane\n    Duh ibu, kula dereng purun\n    Duh ibu, kula mboten medun\n    Nadyan ayu sisane si Yuyu Kangkang\nPutraku si Ande, Ande, Ande Lumut\nTemuruna ana putri kang unggah-unggahi\nPutrine ngger, kang ayu rupane\nKlenthing kuning iku kang dadi asmane\n    Duh ibu, kula inggih purun\n    Duh ibu, kula baden medun\n    Nadyan ala meniko kang putra suwun",
-      "terjemahan": "-",
-      "not_angka": "assets/lagu/1.ANDHE-ANDHE-LUMUT.png",
-      "audio": "-",
-      "makna": "Ande-ande Lumut merupakan nama tokoh dari cerita rakyat Ande-ande Lumut yang ingin dinikahi oleh 3 orang gadis. Lagu ini memiliki makna yang tidak jauh berbeda dengan cerita dongengnya."
+      "Judul": "Andhe Andhe Lumut",
+      "Informasi_Lagu": "Pencipta: Anjar Jani",
+      "Lirik": "Putraku si Andhe, Andhe, Andhe Lumut\nTemuruna ana putri kang unggah-unggahi\nPutrine ngger, kang ayu rupane\nKlenthing abang iku kang dadi asmane\n    Duh ibu, kula dereng burun\n    Duh ibu, kula mboten medun\n    Nadyan ayu sisane si Yuyu Kangkang\nPutraku si Andhe, Andhe, Andhe Lumut\nTemuruna ana putri kang unggah-unggahi\nPutrine ngger, kang ayu rupane\nKlenthing ijo iku kang dadi asmane\n    Duh ibu, kula dereng purun\n    Duh ibu, kula mboten medun\n    Nadyan ayu sisane si Yuyu Kangkang\nPutraku si Andhe, Andhe, Andhe Lumut\nTemuruna ana putri kang unggah-unggahi\nPutrine ngger, kang ayu rupane\nKlenthing kuning iku kang dadi asmane\n    Duh ibu, kula inggih purun\n    Duh ibu, kula baden medun\n    Nadyan ala meniko kang putra suwun",
+      "Terjemahan": "Anakku si Andhe, Andhe, Andhe Lumut\nTurunlah ada seorang putri yang mau bertemu\nPutrinya, cantik parasnya\nKlenthing merah itu namanya\n    Duh ibu, saya belum mau\n    Duh ibu, saya tidak mau turun\n    Walaupun cantik tapi sisa Yuyu Kangkang\nAnakku si Andhe, Andhe, Andhe Lumut\nTurunlah ada seorang putri yang mau bertemu\nPutrinya, cantik parasnya\nKlenthing hijau itu namanya\n    Duh ibu, saya belum mau\n    Duh ibu, saya tidak mau turun\n    Walaupun cantik tapi sisa Yuyu Kangkang\nAnakku si Andhe, Andhe, Andhe Lumut\nTurunlah ada seorang putri yang mau bertemu\nPutrinya, cantik parasnya\nKlenthing kuning itu namanya\n    Duh ibu, saya mau\n    Duh ibu, saya akan turun\n    Walau jelek itulah yang pilihan saya",
+      "Not_Angka": "assets/lagu/1.ANDHE-ANDHE-LUMUT.png",
+      "Audio": "assets/audio/Ande-Ande-Lumut.mp3",
+      "Makna": "Ande-ande Lumut merupakan nama tokoh dari cerita rakyat Ande-ande Lumut yang ingin dinikahi oleh 3 orang gadis. Lagu ini memiliki makna yang tidak jauh berbeda dengan cerita dongengnya."
     },
     {
-      "judul": "Bapak Pucung",
-      "informasi_lagu": "Pencipta: Tidak Diketahui",
-      "lirik": "Bapak pucung dudu watu dudu gunung\nSangkane ing sebrang\n‘ngon-ingone sang Bupati\nBapak pucung yen m’laku lembehan grana",
-      "terjemahan": "Bapak pucung bukan batu bukan gunung\nBerasal dari tanah seberang\nPeliharaan sang bupati\nJika berjalan si pucung melambaikan hidung",
-      "not_angka": "assets/lagu/2.BAPAK-PUCUNG.jpg",
-      "audio": "-",
-      "makna": "Lagu ini memiliki filosofi yang mendalam agar sesama manusia menjaga hubungan baik dan positif di mana saja, baik lingkungan keluarga, tetangga, pekerjaan, dan lainnya."
+      "Judul": "Bapak Pucung",
+      "Informasi_Lagu": "Pencipta: Tidak Diketahui",
+      "Lirik": "Bapak pucung dudu watu dudu gunung\nSangkane ing sebrang\n‘ngon-ingone sang Bupati\nBapak pucung yen m’laku lembehan grana",
+      "Terjemahan": "Bapak pucung bukan batu bukan gunung\nBerasal dari tanah seberang\nPeliharaan sang bupati\nJika berjalan si pucung melambaikan hidung",
+      "Not_Angka": "assets/lagu/2.BAPAK-PUCUNG.jpg",
+      "Audio": "assets/audio/Bapak-Pocung.mp3",
+      "Makna": "Lagu ini memiliki filosofi yang mendalam agar sesama manusia menjaga hubungan baik dan positif di mana saja, baik lingkungan keluarga, tetangga, pekerjaan, dan lainnya."
     },
     {
-      "judul": "Gambang Suling",
-      "informasi_lagu": "Pencipta: Ki Narto Sabdo",
-      "lirik": "Gambang suling ngumandang swarane\nThulat-thulit, kepenak unine\nUunine mung nrenyuhake\nBareng lan kentrung, ketipung, suling\nSigrak kendangane",
-      "terjemahan": "Gambang suling berkumandang suaranya\nTulat-tulit, enak bunyinya\nBunyinya mengharukan\nBersama kentrung, ketipung, dan suling\nMantap bunyi kendangnya",
-      "not_angka": "assets/lagu/4.GAMBANG-SULING.gif",
-      "audio": "-",
-      "makna": "Tentang kekaguman penciptanya yaitu Ki Narto Sabdo terhadap alat musik tradisional suling yang memiliki nada yang indah. Alat musik suling juga biasanya digabungkan dengan instrumen gamelan lain yang kemudian membentuk harmonisasi bunyi yang baik. "
+      "Judul": "Gambang Suling",
+      "Informasi_Lagu": "Pencipta: Ki Narto Sabdo",
+      "Lirik": "Gambang suling ngumandang swarane\nThulat-thulit, kepenak unine\nUunine mung nrenyuhake\nBareng lan kentrung, ketipung, suling\nSigrak kendangane",
+      "Terjemahan": "Gambang suling berkumandang suaranya\nTulat-tulit, enak bunyinya\nBunyinya mengharukan\nBersama kentrung, ketipung, dan suling\nMantap bunyi kendangnya",
+      "Not_Angka": "assets/lagu/4.GAMBANG-SULING.gif",
+      "Audio": "assets/audio/Gambang-Suling.mp3",
+      "Makna": "Tentang kekaguman penciptanya yaitu Ki Narto Sabdo terhadap alat musik tradisional suling yang memiliki nada yang indah. Alat musik suling juga biasanya digabungkan dengan instrumen gamelan lain yang kemudian membentuk harmonisasi bunyi yang baik. "
     },
     {
-      "judul": "Gek Kepriye",
-      "informasi_lagu": "Pencipta: Era Kusuma",
-      "lirik": "Duh kaya ngene rasane\nAnake wong ora duwe\nNgalor ngidul tansah diece\nKaro kanca-kancane\n    Pye pye pye pye ya ben rasakna\n    Pye pye pye pye rasakna dewe\n    Pye pye pye pye ya ben rasakna\n    Pye pye pye pye rasakna dewe\nBesuk kapan aku bisa\nUrip kang luwih mulya\nMelu nyunjung drajating bangsa\nIndonesia kang Mulya\n   Pye pye pye pye mbuh ra weruh\n   Pye pye pye pye mbuh ra ngerti\n   Pye pye pye pye mbuh ra weruh\n   Pye pye pye pye mbuh ra ngerti…",
-      "terjemahan": "Duh begini rasanya\nAnak orang tak punya\nSelatan utara selalu dihina\nOleh teman-temannya\n   Bagaimana Bagaimana Bagaimana Bagaimana ya supaya merasakan\n   Bagaimana Bagaimana Bagaimana Bagaimana merasakan sendiri\n   Bagaimana Bagaimana Bagaimana Bagaimana ya supaya merasakan\n   Bagaimana Bagaimana Bagaimana Bagaimana merasakan sendiri\nKelak jika aku bisa\nHidup yang lebih mulia\nIkut menjunjung martabat bangsa\nIndonesia yang mulia\n   Bagaimana Bagaimana Bagaimana Bagaimana tidak tahu\n    Bagaimana Bagaimana Bagaimana Bagaimana tidak mengerti\n    Bagaimana Bagaimana Bagaimana Bagaimana tidak tahu\n    Bagaimana Bagaimana Bagaimana Bagaimana tidak mengerti",
-      "not_angka": "assets/lagu/5.GEK-KEPRIYE.png",
-      "audio": "-",
-      "makna": "Lagu ini menceritakan tentang seorang pemuda miskin yang susah bergaul karena tidak memiliki apa-apa dan dihina oleh teman-temannya, namun semangat dan optimisme tetap membara untuk selalu bekerja keras. Serta ingin menjadi orang yang mulia yang bisa/turut menjunjung tinggi martabat bangsa."
+      "Judul": "Gek Kepriye",
+      "Informasi_Lagu": "Pencipta: Era Kusuma",
+      "Lirik": "Duh kaya ngene rasane\nAnake wong ora duwe\nNgalor ngidul tansah diece\nKaro kanca-kancane\n    Pye pye pye pye ya ben rasakna\n    Pye pye pye pye rasakna dewe\n    Pye pye pye pye ya ben rasakna\n    Pye pye pye pye rasakna dewe\nBesuk kapan aku bisa\nUrip kang luwih mulya\nMelu nyunjung drajating bangsa\nIndonesia kang Mulya\n   Pye pye pye pye mbuh ra weruh\n   Pye pye pye pye mbuh ra ngerti\n   Pye pye pye pye mbuh ra weruh\n   Pye pye pye pye mbuh ra ngerti…",
+      "Terjemahan": "Duh begini rasanya\nAnak orang tak punya\nSelatan utara selalu dihina\nOleh teman-temannya\n   Bagaimana Bagaimana Bagaimana Bagaimana ya supaya merasakan\n   Bagaimana Bagaimana Bagaimana Bagaimana merasakan sendiri\n   Bagaimana Bagaimana Bagaimana Bagaimana ya supaya merasakan\n   Bagaimana Bagaimana Bagaimana Bagaimana merasakan sendiri\nKelak jika aku bisa\nHidup yang lebih mulia\nIkut menjunjung martabat bangsa\nIndonesia yang mulia\n   Bagaimana Bagaimana Bagaimana Bagaimana tidak tahu\n    Bagaimana Bagaimana Bagaimana Bagaimana tidak mengerti\n    Bagaimana Bagaimana Bagaimana Bagaimana tidak tahu\n    Bagaimana Bagaimana Bagaimana Bagaimana tidak mengerti",
+      "Not_Angka": "assets/lagu/5.GEK-KEPRIYE.png",
+      "Audio": "assets/audio/Gek-Kepriye.mp3",
+      "Makna": "Lagu ini menceritakan tentang seorang pemuda miskin yang susah bergaul karena tidak memiliki apa-apa dan dihina oleh teman-temannya, namun semangat dan optimisme tetap membara untuk selalu bekerja keras. Serta ingin menjadi orang yang mulia yang bisa/turut menjunjung tinggi martabat bangsa."
     },
     {
-      "judul": "Jaranan",
-      "informasi_lagu": "Pencipta: Ki Hadi Sukatno",
-      "lirik": "Jaranan … Jaranan, Jarane jaran teji\nSing numpak ndoro Bei, Sing ngiring poro abdi\nJrek jrek nong, Jrek jrek gong\nJarane mlebu ning lurung\nGedebuk krincing … Gedebuk krincing\nGedebuk krincing … prok prok\nGedebuk jeder\n   Jaranan … Jaranan, Jarane jaran kepang\n    Sing nunggang klambi abang, Mlakune ndhut ndutan\n    Jrek jrek nong, Jrek jrek gong\n    Jarane mlebu ning lurung\n    Gedebuk krincing … Gedebuk krincing\n   Gedebuk krincing … prok prok\n    Gedebuk jeder",
-      "terjemahan": "Kuda kudaan … Kuda kudaan, Kudanya kuda teji\nYang naik ndoro Bei, Yang diikuti para abdi\nJrek jrek nong, Jrek jrek gong\nKudanya dimasukkan di jalan-jalan\nGedebuk krincing … Gedebuk krincing\nGedebuk krincing … Prok prok\nGedebuk jeder\n   Kuda kudaan … Kuda kudaan, Kudanya kuda kepang\n    Yang naik baju merah, Jalannya angguk anggukan\n    Jrek jrek nong, Jrek jrek gong\n    Kudanya dimasukkan di jalan-jalan\n    Gedebuk krincing … Gedebuk krincing\n   Gedebuk krincing … Prok prok\n    Gedebuk jeder",
-      "not_angka": "assets/lagu/8.JARANAN.png",
-      "audio": "-",
-      "makna": "Makna lagu kedua."
+      "Judul": "Jaranan",
+      "Informasi_lagu": "Pencipta: Ki Hadi Sukatno",
+      "Lirik": "Jaranan … Jaranan, Jarane jaran teji\nSing numpak ndoro Bei, Sing ngiring poro abdi\nJrek jrek nong, Jrek jrek gong\nJarane mlebu ning lurung\nGedebuk krincing … Gedebuk krincing\nGedebuk krincing … prok prok\nGedebuk jeder\n   Jaranan … Jaranan, Jarane jaran kepang\n    Sing nunggang klambi abang, Mlakune ndhut ndutan\n    Jrek jrek nong, Jrek jrek gong\n    Jarane mlebu ning lurung\n    Gedebuk krincing … Gedebuk krincing\n   Gedebuk krincing … prok prok\n    Gedebuk jeder",
+      "Terjemahan": "Kuda kudaan … Kuda kudaan, Kudanya kuda teji\nYang naik ndoro Bei, Yang diikuti para abdi\nJrek jrek nong, Jrek jrek gong\nKudanya dimasukkan di jalan-jalan\nGedebuk krincing … Gedebuk krincing\nGedebuk krincing … Prok prok\nGedebuk jeder\n   Kuda kudaan … Kuda kudaan, Kudanya kuda kepang\n    Yang naik baju merah, Jalannya angguk anggukan\n    Jrek jrek nong, Jrek jrek gong\n    Kudanya dimasukkan di jalan-jalan\n    Gedebuk krincing … Gedebuk krincing\n   Gedebuk krincing … Prok prok\n    Gedebuk jeder",
+      "Not_Angka": "assets/lagu/8.JARANAN.png",
+      "Audio": "assets/audio/Jaranan.mp3",
+      "Makna": "Tentang bagaimana berperilaku hormat kepada orang yang lebih tua atau lebih tinggi kedudukannya. Namun sikap hormat tersebut bukan semata-mata untuk merendah diri, melainkan agar memberikan penghormatan kepada orang yang memang pantas untuk dihormati."
     },
     {
-      "judul": "Sekolah",
-      "informasi_lagu": "Pencipta: Tidak Diketahui",
-      "lirik": "Esuk-esuk srengengene lagi metu, sibu\nNyuwun pangestu kang putra badhe sinau, sibu\nNyangking etas ing jerone isi sabak, bapak\nGerip lan sada wis jumepak ana kothak bapak\nAwan-awan srengengene ana tengah, si ‘mbah\nBungah-bungah kang wayah mulih sekolah, si ‘mbah\nSore-sore lampune dhimunculake, budhe\nWis wayahe bocah-bocah pada sinau budhe",
-      "terjemahan": "Pagi-pagi sudah keluar rumah, ibu\nMemohon restu agar anak belajar dengan baik, ibu\nMelihat buku di dalam tas, ayah\nPulang sekolah sudah ada di rumah, ayah\nAwan-awan berada di tengah langit, kakek\nBunga-bunga yang dulu pernah sekolah kembali ke sekolah, kakek\nSore-sore lampunya menyala, nenek\nAnak-anak sudah belajar di rumah, nenek",
-      "not_angka": "-",
-      "audio": "-",
-      "makna": "Lagu ini mengajarkan agar setiap orang senantiasa menjaga kejujuran, keluguan, dan tidak boleh bersikap sombong. Selain itu, mengajarkan supaya manusia hendaknya tidak berbuat sesuatu yang menyebabkan orang lain sakit hati."
+      "Judul": "Sekolah",
+      "Informasi_Lagu": "Pencipta: Tidak Diketahui",
+      "Lirik": "Esuk-esuk srengengene lagi metu, sibu\nNyuwun pangestu kang putra badhe sinau, sibu\nNyangking etas ing jerone isi sabak, bapak\nGerip lan sada wis jumepak ana kothak bapak\nAwan-awan srengengene ana tengah, si ‘mbah\nBungah-bungah kang wayah mulih sekolah, si ‘mbah\nSore-sore lampune dhimunculake, budhe\nWis wayahe bocah-bocah pada sinau budhe",
+      "Terjemahan": "Pagi-pagi sudah keluar rumah, ibu\nMemohon restu agar anak belajar dengan baik, ibu\nMelihat buku di dalam tas, ayah\nPulang sekolah sudah ada di rumah, ayah\nAwan-awan berada di tengah langit, kakek\nBunga-bunga yang dulu pernah sekolah kembali ke sekolah, kakek\nSore-sore lampunya menyala, nenek\nAnak-anak sudah belajar di rumah, nenek",
+      "Audio": "assets/audio/Sekolah.mp3",
+      "Makna": "Lagu ini mengajarkan agar setiap orang senantiasa menjaga kejujuran, keluguan, dan tidak boleh bersikap sombong. Selain itu, mengajarkan supaya manusia hendaknya tidak berbuat sesuatu yang menyebabkan orang lain sakit hati."
     },
     {
-      "judul": "Sinom",
-      "informasi_lagu": "Pencipta: Sunan Muria",
-      "lirik": "Amenangi jaman edan\nEwuh aja ing pambudi\nMelu edan ora tahan\nYen tan melu anglakoni\nBoya kaduman melik kaliren\nWekasanipun dilalah karsa Allah\nBegjane kang lali\nLuwih begja kang engling lan waspada",
-      "terjemahan": "Mengalami zaman gila\nSulit dalam pikiran\nIkut gila enggak tahan\nKalau enggak ikut melakoni\nTak dapat bagian apa-apa kelaparan akhirnya\nUntungnya kehendak Allah\nSebaik-baiknya orang lupa\nLebih beruntung yang senantiasa ingat dan waspada",
-      "not_angka": "assets/lagu/13.SINOM.jpg",
-      "audio": "-",
-      "makna": "Sinom atau sinoman berarti sekumpulan anak muda. Lagu Sinom ini menceritakan tentang kehidupan anak-anak remaja yang sedang dalam masa pubertas dan berada di tahap pencarian jati diri. Selain itu, mengandung nasihat agar anak muda selalu bijak dalam bertingkah laku."
-    },
-    {
-      "judul": "Suwe Ora Jamu",
-      "informasi_lagu": "Pencipta: R.C. Hardjosubroto.",
-      "lirik": "Suwé ora jamu \nJamu godhong téla, \nSuwé ora ketemu \nKetemu pisan gawé gela",
-      "terjemahan": "Lama tidak minum jamu \nJamu daun ketela, \nLama tidak bertemu \nSekali bertemu membuat kecewa",
-      "not_angka": "assets/lagu/15.SUWE-ORA-JAMU.png",
-      "audio": "-",
-      "makna": "Tentang sekelompok teman yang lama tak bertemu, namun ketika bertemu malah merasakan kekecewaan. Lagu ini mengajarkan kepada semua orang bahwa hal baik dan hal buruk bisa saja terjadi kapan saja dan terkadang hidup tidak sesuai dengan apa yang diimpikan. Segalanya harus dihadapi, sekalipun pernah jatuh harus kembali bangkit dari kegagalan. "
+      "Judul": "Suwe Ora Jamu",
+      "Informasi_lagu": "Pencipta: R.C. Hardjosubroto.",
+      "Lirik": "Suwé ora jamu \nJamu godhong téla, \nSuwé ora ketemu \nKetemu pisan gawé gela \nSuwé ora jamu mas \nJamu godhong meniran, \nWis suwé ora ketemu \nKetemu pisan dadi pikiran \nWis suwe yo mas, ora jamu \nJamu godhong sligi, \nWis suwé ora ketemu \nKetemu pisan dadi ati ",
+      "Terjemahan": "Lama tidak minum jamu \nJamu daun ketela, \nLama tidak bertemu \nSekali bertemu membuat kecewa \nLama tidak minum jamu, Mas \nJamu daun meniran \nSudah lama tidak bertemu \nBertemu pertama jadi pikiran \nSudah lama ya, Mas, tidak minum jamu \nJamu godhong sligi \nSudah lama tidak bertemu \nBertemu sekali jadi hati",
+      "Not_Angka": "assets/lagu/15.SUWE-ORA-JAMU.png",
+      "Audio": "assets/audio/Suwe-ora-jamu.mp3",
+      "Makna": "Tentang sekelompok teman yang lama tak bertemu, namun ketika bertemu malah merasakan kekecewaan. Lagu ini mengajarkan kepada semua orang bahwa hal baik dan hal buruk bisa saja terjadi kapan saja dan terkadang hidup tidak sesuai dengan apa yang diimpikan. Segalanya harus dihadapi, sekalipun pernah jatuh harus kembali bangkit dari kegagalan. "
     }
   ]
 }

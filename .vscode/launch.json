@@ -8,7 +8,7 @@
       "name": "lagu_daerah_dan_cerita_rakyat",
       "request": "launch",
       "type": "dart",
-      "program": "lib/home.dart"
+      "program": "lib/main.dart"
     },
     {
       "name": "lagu_daerah_dan_cerita_rakyat (profile mode)",

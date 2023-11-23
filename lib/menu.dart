@@ -64,19 +64,6 @@ class _MenuScreenState extends State<MenuScreen> {
                         'assets/lagu.svg',
                         fit: BoxFit.cover,
                       ),
-                      Text(
-                        'Lagu Daerah',
-                        style: GoogleFonts.poppins(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                            shadows: [
-                              Shadow(
-                                  color: Colors.black,
-                                  blurRadius: 2,
-                                  offset: Offset(1, 1))
-                            ]),
-                      ),
                     ],
                   ),
                 ),
@@ -112,18 +99,6 @@ class _MenuScreenState extends State<MenuScreen> {
                       SvgPicture.asset(
                         'assets/cerita.svg',
                         fit: BoxFit.cover,
-                      ),
-                      Text(
-                        'Cerita Rakyat',
-                        style: GoogleFonts.poppins(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            shadows: [
-                              Shadow(
-                                color: Colors.black,
-                                blurRadius: 2,
-                              )
-                            ]),
                       ),
                     ],
                   ),
