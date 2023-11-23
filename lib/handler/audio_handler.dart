@@ -9,7 +9,7 @@ void showBottomSheetFunction(
   final AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
 
   void loadAudio(Map<String, dynamic> laguData) {
-    final audioUrl = laguData['audio'];
+    final audioUrl = laguData['Audio'];
 
     assetsAudioPlayer.open(
       Audio(audioUrl),
@@ -44,7 +44,7 @@ void showBottomSheetFunction(
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Text(laguData['judul'],
+                    Text(laguData['Judul'],
                         style: GoogleFonts.poppins(
                             fontWeight: FontWeight.bold, fontSize: 34)),
                     SizedBox(height: 80.0),

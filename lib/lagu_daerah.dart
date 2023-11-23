@@ -43,8 +43,8 @@ class _LaguDaerahPageState extends State<LaguDaerahPage> {
     String jsonData = await rootBundle.loadString('assets/data/lagu.json');
     Map<String, dynamic> data = json.decode(jsonData);
     setState(() {
-      laguDaerahData['Sesuai Kurikulum'] = data['lagu_daerah_kurikulum'];
-      laguDaerahData['Umum'] = data['lagu_daerah_umum'];
+      laguDaerahData['Sesuai Kurikulum'] = data['Lagu_Daerah_Kurikulum'];
+      laguDaerahData['Umum'] = data['Lagu_Daerah_Umum'];
     });
   }
 
@@ -127,7 +127,7 @@ class _LaguDaerahPageState extends State<LaguDaerahPage> {
                                   child: Row(
                                     children: [
                                       Expanded(
-                                        child: Text(lagu['judul'],
+                                        child: Text(lagu['Judul'],
                                             style: GoogleFonts.poppins(
                                                 textStyle: TextStyle(
                                                     color: Colors.white),

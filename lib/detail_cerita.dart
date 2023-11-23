@@ -22,9 +22,13 @@ class DetailCeritaRakyatPage extends StatelessWidget {
             Navigator.of(context).pop();
           },
         ),
-        title: Text(ceritaData['judul'],
-            style: GoogleFonts.poppins(
-                fontWeight: FontWeight.bold, color: Colors.black)),
+        title: Text(
+          ceritaData['Judul'],
+          style: GoogleFonts.poppins(
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+          ),
+        ),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -36,30 +40,44 @@ class DetailCeritaRakyatPage extends StatelessWidget {
               if (cerita['teks'] != null)
                 Container(
                   padding: EdgeInsets.all(16.0),
-                  child: Text(cerita['teks'], style: GoogleFonts.poppins()),
+                  child: Text(
+                    cerita['teks'],
+                    style: GoogleFonts.poppins(),
+                  ),
                 ),
-              if (cerita['gambar'] != null)
+              if (cerita['gambar'] != null && cerita['gambar'] != '-')
                 Container(
                   padding: EdgeInsets.all(16.0),
                   child: Image.asset(
                     cerita['gambar'],
                     fit: BoxFit.cover,
                   ),
-                ),
+                )
             ],
-            if (ceritaData['moral'] != null)
+            if (ceritaData['Moral'] != null)
               Container(
                 padding: EdgeInsets.all(16.0),
-                child: Text('Moral dari Cerita',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.bold, fontSize: 20)),
+                child: Text(
+                  'Moral dari Cerita',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
               ),
-            if (ceritaData['video'] != '-')
+            Container(
+              padding: EdgeInsets.all(16.0),
+              child: Text(
+                ceritaData['Moral'],
+                style: GoogleFonts.poppins(),
+              ),
+            ),
+            if (ceritaData['Video'] != null && ceritaData['Video'] != '-')
               Container(
                 padding: EdgeInsets.all(16.0),
                 child: ElevatedButton(
                   onPressed: () {
-                    String videoLink = ceritaData['video'];
+                    String videoLink = ceritaData['Video'];
                     if (videoLink != '-') {
                       Navigator.push(
                         context,
@@ -80,15 +98,22 @@ class DetailCeritaRakyatPage extends StatelessWidget {
                             var offsetAnimation = animation.drive(tween);
 
                             return SlideTransition(
-                                position: offsetAnimation, child: child);
+                              position: offsetAnimation,
+                              child: child,
+                            );
                           },
                         ),
                       );
+                    } else {
+                      // Jika videoLink null atau '-'
+                      print('Link video kosong');
                     }
                   },
                   child: Text(
                     'Tonton Video',
-                    style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(

@@ -1,5 +1,5 @@
 {
-  "Lagu_Daerah_Berdasarkan_Kurikulum": [
+  "Lagu_Daerah_Kurikulum": [
     {
       "Judul": "Cublak-Cublak Suweng",
       "Informasi_Lagu": "Pencipta: Sunan Giri",
@@ -68,6 +68,7 @@
       "Informasi_Lagu": "Pencipta: Sunan Kalijaga",
       "Lirik": "Sluku-sluku bathok \nBathoke ela-elo \nSi Rama menyang Solo \nLeh olehe payung mutho \nMak jentit lho-lho lobah \nWong mati ora obah \nYen obah medeni bocah \nYen urip goleka duwit",
       "Terjemahan": "Ayun-ayun kepala \nKepalanya geleng-geleng \nBapak pergi ke Solo \nOleh-olehnya payung mutha \nTiba-tiba bergerak\nOrang meninggal tidak bergerak \nKalau bergerak menakuti orang \nKalau hidup carilah uang",
+      "Not_Angka": "-",
       "Audio": "assets/audio/Sluku-Sluku-Bathok.mp3",
       "Makna": "Bahwa hidup bukan hanya soal bekerja, namun ada kalanya seseorang perlu mengistirahatkan pikirannya agar jiwa dan raganya esok hari dapat bekerja kembali dengan maksimal. Lagu ini diciptakan oleh Sunan Kalijaga untuk menyebarkan ajaran agama Islam agar lebih mudah diterima oleh masyarakat."
     }
@@ -123,6 +124,7 @@
       "Informasi_Lagu": "Pencipta: Tidak Diketahui",
       "Lirik": "Esuk-esuk srengengene lagi metu, sibu\nNyuwun pangestu kang putra badhe sinau, sibu\nNyangking etas ing jerone isi sabak, bapak\nGerip lan sada wis jumepak ana kothak bapak\nAwan-awan srengengene ana tengah, si ‘mbah\nBungah-bungah kang wayah mulih sekolah, si ‘mbah\nSore-sore lampune dhimunculake, budhe\nWis wayahe bocah-bocah pada sinau budhe",
       "Terjemahan": "Pagi-pagi sudah keluar rumah, ibu\nMemohon restu agar anak belajar dengan baik, ibu\nMelihat buku di dalam tas, ayah\nPulang sekolah sudah ada di rumah, ayah\nAwan-awan berada di tengah langit, kakek\nBunga-bunga yang dulu pernah sekolah kembali ke sekolah, kakek\nSore-sore lampunya menyala, nenek\nAnak-anak sudah belajar di rumah, nenek",
+      "Not_Angka": "-",
       "Audio": "assets/audio/Sekolah.mp3",
       "Makna": "Lagu ini mengajarkan agar setiap orang senantiasa menjaga kejujuran, keluguan, dan tidak boleh bersikap sombong. Selain itu, mengajarkan supaya manusia hendaknya tidak berbuat sesuatu yang menyebabkan orang lain sakit hati."
     },

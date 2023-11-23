@@ -9,6 +9,33 @@ class DetailLaguPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget notAngkaSection() {
+      if (laguData['not_angka'] != null && laguData['not_angka'] != '-') {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              padding: EdgeInsets.all(16.0),
+              child: Text(
+                'Not Angka',
+                style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.bold, fontSize: 20),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(16.0),
+              child: Image.asset(
+                laguData['not_angka'], // Path gambar not angka
+                fit: BoxFit.cover, // Sesuaikan dengan kebutuhan Anda
+              ),
+            ),
+          ],
+        );
+      } else {
+        return SizedBox(); // Widget kosong jika tidak ada not angka
+      }
+    }
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent, // Transparent background
@@ -22,7 +49,7 @@ class DetailLaguPage extends StatelessWidget {
             Navigator.of(context).pop();
           },
         ),
-        title: Text(laguData['judul'],
+        title: Text(laguData['Judul'],
             style: GoogleFonts.poppins(
                 fontWeight: FontWeight.bold, color: Colors.black)),
         centerTitle: true,
@@ -44,7 +71,7 @@ class DetailLaguPage extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(16.0),
                   child: Text(
-                    laguData['informasi_lagu'],
+                    laguData['Informasi_Lagu'],
                     style: GoogleFonts.poppins(),
                   ),
                 ),
@@ -59,7 +86,7 @@ class DetailLaguPage extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(16.0),
                   child: Text(
-                    laguData['lirik'],
+                    laguData['Lirik'],
                     style: GoogleFonts.poppins(),
                   ),
                 ),
@@ -74,29 +101,13 @@ class DetailLaguPage extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(16.0),
                   child: Text(
-                    laguData['terjemahan'],
+                    laguData['Terjemahan'],
                     style: TextStyle(
                       fontSize: 16.0,
                     ),
                   ),
                 ),
-                if (laguData['not_angka'] != '-')
-                  Container(
-                    padding: EdgeInsets.all(16.0),
-                    child: Text(
-                      'Not Angka',
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.bold, fontSize: 20),
-                    ),
-                  ),
-                if (laguData['not_angka'] != '-')
-                  Container(
-                    padding: EdgeInsets.all(16.0),
-                    child: Image.asset(
-                      laguData['not_angka'], // Path gambar not angka
-                      fit: BoxFit.cover, // Sesuaikan dengan kebutuhan Anda
-                    ),
-                  ),
+                notAngkaSection(), // Panggil bagian not angka yang telah dibuat
               ],
             ),
           ),
@@ -107,7 +118,7 @@ class DetailLaguPage extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {
                   // Aksi saat tombol "Audio Link" ditekan
-                  String audio = laguData['audio'];
+                  String audio = laguData['Audio'];
                   if (audio != '-') {
                     showBottomSheetFunction(context, laguData);
                   } else {

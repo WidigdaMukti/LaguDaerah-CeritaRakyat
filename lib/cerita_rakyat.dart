@@ -40,8 +40,8 @@ class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
     Map<String, dynamic> data = json.decode(jsonData);
     setState(() {
       ceritaRakyatData['Cerita Rakyat Kurikulum'] =
-          data['cerita_rakyat_kurikulum'];
-      ceritaRakyatData['Cerita Rakyat Umum'] = data['cerita_rakyat_umum'];
+          data['Cerita_Rakyat_Kurikulum'];
+      ceritaRakyatData['Cerita Rakyat Umum'] = data['Cerita_Rakyat_Umum'];
     });
   }
 
@@ -135,7 +135,7 @@ class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
                                   child: Row(
                                     children: [
                                       Expanded(
-                                        child: Text(cerita['judul'],
+                                        child: Text(cerita['Judul'],
                                             style: GoogleFonts.poppins(
                                                 textStyle: TextStyle(
                                                     color: Colors.white),
