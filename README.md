@@ -1,6 +1,5 @@
-# lagu_daerah_dan_cerita_rakyat
-
-A new Flutter project.
+# Lagu Daerah dan Cerita Rakyat
+Flutter project.
 
 ## Getting Started
 
