@@ -47,7 +47,13 @@ class _VideoHandlerState extends State<VideoHandler> {
   void refreshPage() {
     setState(() {
       // Anda dapat menambahkan logika refresh atau pengaturan ulang yang diperlukan di sini
-      // Misalnya, load ulang konten atau mengatur ulang status aplikasi.
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (BuildContext context) =>
+              VideoHandler(videoId: widget.videoId),
+        ),
+      );
     });
   }
 
@@ -88,10 +94,7 @@ class _VideoHandlerState extends State<VideoHandler> {
         child: YoutubePlayer(
           controller: _controller,
           showVideoProgressIndicator: true,
-          progressIndicatorColor: Colors.blueAccent,
-          onReady: () {
-            // Kontrol pemutaran video siap.
-          },
+          onReady: () => debugPrint("Vidio Ready Bossku"),
         ),
       ),
     );

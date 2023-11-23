@@ -10,7 +10,7 @@ class DetailLaguPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget notAngkaSection() {
-      if (laguData['not_angka'] != null && laguData['not_angka'] != '-') {
+      if (laguData['Not_Angka'] != null && laguData['Not_Angka'] != '-') {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -25,7 +25,7 @@ class DetailLaguPage extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(16.0),
               child: Image.asset(
-                laguData['not_angka'], // Path gambar not angka
+                laguData['Not_Angka'], // Path gambar not angka
                 fit: BoxFit.cover, // Sesuaikan dengan kebutuhan Anda
               ),
             ),
