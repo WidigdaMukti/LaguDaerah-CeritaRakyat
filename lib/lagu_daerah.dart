@@ -55,7 +55,7 @@ class _LaguDaerahPageState extends State<LaguDaerahPage> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Colors.black,
           ),
@@ -73,7 +73,7 @@ class _LaguDaerahPageState extends State<LaguDaerahPage> {
         centerTitle: true,
       ),
       body: Padding(
-        padding: EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0),
+        padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0),
         child: Stack(
           children: [
             Positioned.fill(
@@ -90,59 +90,73 @@ class _LaguDaerahPageState extends State<LaguDaerahPage> {
               children: laguDaerahData.keys.map((category) {
                 return Column(
                   children: [
-                    SizedBox(height: 16.0), // Memberi jarak antara kategori
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(
-                            12.0), // Menambahkan border radius di sini
-                        color: Colors.blue.withOpacity(0.5),
-                      ),
-                      child: ExpansionTile(
-                        tilePadding: EdgeInsets.symmetric(
-                            horizontal: 16.0), // Padding horizontal
-                        title: Text(
-                          category,
-                          style: GoogleFonts.poppins(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                    const SizedBox(
+                        height: 16.0), // Memberi jarak antara kategori
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12.0),
+                      child: Container(
+                        color: Colors.indigo.withOpacity(0.5),
+                        child: ExpansionTile(
+                          shape:
+                              Border.all(width: 0, color: Colors.transparent),
+                          tilePadding:
+                              const EdgeInsets.symmetric(horizontal: 16.0),
+                          backgroundColor: Colors.transparent,
+                          title: Text(
+                            category,
+                            style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
                           ),
-                        ),
-                        children: laguDaerahData[category]?.map((lagu) {
-                              return InkWell(
-                                onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => DetailLaguPage(
-                                        laguData: lagu,
+                          children: laguDaerahData[category]?.map((lagu) {
+                                return InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => DetailLaguPage(
+                                          laguData: lagu,
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                  child: ClipRRect(
+                                    borderRadius: const BorderRadius.only(
+                                      bottomLeft: Radius.circular(12.0),
+                                      bottomRight: Radius.circular(12.0),
+                                    ),
+                                    child: Container(
+                                      margin: const EdgeInsets.symmetric(
+                                          vertical: 4.0),
+                                      color: Colors
+                                          .transparent, // Mengatur latar belakang menjadi transparan
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                          vertical: 12.0,
+                                          horizontal: 16.0,
+                                        ),
+                                        child: Row(
+                                          children: [
+                                            Expanded(
+                                              child: Text(
+                                                lagu['Judul'],
+                                                style: GoogleFonts.poppins(
+                                                  textStyle: const TextStyle(
+                                                      color: Colors.white),
+                                                  fontSize: 16.0,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  );
-                                },
-                                child: Container(
-                                  // color: Colors.blue.withOpacity(
-                                  //     0.3), // Warna biru dengan opasitas 50%
-                                  padding: EdgeInsets.symmetric(
-                                      vertical: 12.0, horizontal: 16.0),
-                                  child: Row(
-                                    children: [
-                                      Expanded(
-                                        child: Text(lagu['Judul'],
-                                            style: GoogleFonts.poppins(
-                                                textStyle: TextStyle(
-                                                    color: Colors.white),
-                                                fontSize: 16.0)),
-                                      ),
-                                      // Icon(
-                                      //   Icons.arrow_forward,
-                                      //   color: Colors.white, // Icon putih
-                                      // ),
-                                    ],
                                   ),
-                                ),
-                              );
-                            }).toList() ??
-                            [],
+                                );
+                              }).toList() ??
+                              [],
+                        ),
                       ),
                     ),
                   ],

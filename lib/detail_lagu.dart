@@ -133,15 +133,17 @@ class DetailLaguPage extends StatelessWidget {
                     SizedBox(width: 8.0), // Memberi jarak antara ikon dan teks
                     Text(
                       'Play Audio',
-                      style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+                      style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.bold, color: Colors.indigo),
                     ),
                     Icon(
                       Icons.play_arrow,
-                      color: Colors.white,
+                      color: Colors.indigo,
                     ),
                   ],
                 ),
                 style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromARGB(255, 203, 211, 255),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12))),
               ),

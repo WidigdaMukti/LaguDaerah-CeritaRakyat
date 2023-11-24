@@ -20,7 +20,7 @@ class _VideoHandlerState extends State<VideoHandler> {
     String videoId = convertUrlToId(widget.videoId);
     _controller = YoutubePlayerController(
       initialVideoId: videoId,
-      flags: YoutubePlayerFlags(
+      flags: const YoutubePlayerFlags(
         autoPlay: false,
         mute: false,
       ),
@@ -64,7 +64,7 @@ class _VideoHandlerState extends State<VideoHandler> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Colors.white,
           ),
@@ -74,14 +74,14 @@ class _VideoHandlerState extends State<VideoHandler> {
         ),
         actions: [
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.refresh,
               color: Colors.white,
             ),
             onPressed: refreshPage,
           ),
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.open_in_browser,
               color: Colors.white,
             ),
@@ -92,10 +92,9 @@ class _VideoHandlerState extends State<VideoHandler> {
       backgroundColor: Colors.black,
       body: Center(
         child: YoutubePlayer(
-          controller: _controller,
-          showVideoProgressIndicator: true,
-          onReady: () => debugPrint("Vidio Ready Bossku"),
-        ),
+            controller: _controller,
+            showVideoProgressIndicator: true,
+            onReady: () {}),
       ),
     );
   }

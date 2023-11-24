@@ -112,10 +112,12 @@ class DetailCeritaRakyatPage extends StatelessWidget {
                   child: Text(
                     'Tonton Video',
                     style: GoogleFonts.poppins(
+                      color: Colors.indigo,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromARGB(255, 203, 211, 255),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),

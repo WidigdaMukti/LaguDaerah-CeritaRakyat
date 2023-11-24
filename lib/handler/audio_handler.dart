@@ -102,12 +102,13 @@ void showBottomSheetFunction(
                                       child: Container(
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
-                                          color: Colors.blue,
+                                          color: const Color.fromARGB(
+                                              255, 203, 211, 255),
                                         ),
                                         padding: EdgeInsets.all(8.0),
                                         child: Icon(
                                           Icons.stop,
-                                          color: Colors.white,
+                                          color: Colors.indigo,
                                         ),
                                       ),
                                     ),
@@ -120,7 +121,8 @@ void showBottomSheetFunction(
                                       child: Container(
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
-                                          color: Colors.blue,
+                                          color: const Color.fromARGB(
+                                              255, 203, 211, 255),
                                         ),
                                         padding: EdgeInsets.all(12.0),
                                         child: StreamBuilder(
@@ -134,7 +136,7 @@ void showBottomSheetFunction(
                                                   ? Icons.pause
                                                   : Icons
                                                       .play_arrow, // Mengubah ikon sesuai status pemutaran
-                                              color: Colors.white,
+                                              color: Colors.indigo,
                                               size: 34.0,
                                             );
                                           },
@@ -150,12 +152,13 @@ void showBottomSheetFunction(
                                       child: Container(
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
-                                          color: Colors.blue,
+                                          color: const Color.fromARGB(
+                                              255, 203, 211, 255),
                                         ),
                                         padding: EdgeInsets.all(8.0),
                                         child: Icon(
                                           Icons.refresh,
-                                          color: Colors.white,
+                                          color: Colors.indigo,
                                         ),
                                       ),
                                     ),
@@ -171,8 +174,8 @@ void showBottomSheetFunction(
                 ),
               ),
               Positioned(
-                top: 8,
-                right: 2,
+                top: 10,
+                right: 8,
                 child: GestureDetector(
                   onTap: () {
                     assetsAudioPlayer.stop();
@@ -180,7 +183,11 @@ void showBottomSheetFunction(
                         context); // Menutup dialog saat ikon close diklik
                   },
                   child: Container(
-                    padding: EdgeInsets.all(8.0),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Color.fromARGB(255, 219, 219, 219),
+                    ),
+                    padding: EdgeInsets.all(4.0),
                     child: Icon(
                       Icons.close,
                       color: Colors.black,
