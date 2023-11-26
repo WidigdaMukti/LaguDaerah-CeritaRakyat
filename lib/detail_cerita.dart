@@ -10,53 +10,80 @@ class DetailCeritaRakyatPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back,
-            color: Colors.black,
-          ),
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-        ),
-        title: Text(
-          ceritaData['Judul'],
-          style: GoogleFonts.poppins(
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
-          ),
-        ),
-        centerTitle: true,
-      ),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.transparent,
+      //   elevation: 0,
+      //   leading: IconButton(
+      //     icon: const Icon(
+      //       Icons.arrow_back,
+      //       color: Colors.black,
+      //     ),
+      //     onPressed: () {
+      //       Navigator.of(context).pop();
+      //     },
+      //   ),
+      //   title: Text(
+      //     ceritaData['Judul'],
+      //     style: GoogleFonts.poppins(
+      //       fontWeight: FontWeight.bold,
+      //       color: Colors.black,
+      //     ),
+      //   ),
+      //   centerTitle: true,
+      // ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.center,
+              child: Text(
+                ceritaData['Judul'],
+                style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.indigo,
+                    fontSize: 30),
+              ),
+            ),
             for (var cerita in ceritaData['Cerita']) ...[
               if (cerita['teks'] != null)
                 Container(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Text(
                     cerita['teks'],
                     style: GoogleFonts.poppins(),
                   ),
                 ),
+              if (cerita['teks-bold'] != null)
+                Container(
+                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+                  child: Text(
+                    cerita['teks-bold'],
+                    style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+                  ),
+                ),
               if (cerita['gambar'] != null && cerita['gambar'] != '-')
                 Container(
-                  padding: EdgeInsets.all(16.0),
-                  child: Image.asset(
-                    cerita['gambar'],
-                    fit: BoxFit.cover,
+                  padding: const EdgeInsets.all(16.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(
+                        12.0), // Atur nilai border radius sesuai keinginan
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                        12.0), // Border radius untuk gambar
+                    child: Image.asset(
+                      cerita['gambar'],
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 )
             ],
             if (ceritaData['Moral'] != null)
               Container(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
                 child: Text(
                   'Moral dari Cerita',
                   style: GoogleFonts.poppins(
@@ -66,7 +93,7 @@ class DetailCeritaRakyatPage extends StatelessWidget {
                 ),
               ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Text(
                 ceritaData['Moral'],
                 style: GoogleFonts.poppins(),
@@ -74,7 +101,7 @@ class DetailCeritaRakyatPage extends StatelessWidget {
             ),
             if (ceritaData['Video'] != null && ceritaData['Video'] != '-')
               Container(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: ElevatedButton(
                   onPressed: () {
                     String videoLink = ceritaData['Video'];
@@ -109,17 +136,29 @@ class DetailCeritaRakyatPage extends StatelessWidget {
                       print('Link video kosong');
                     }
                   },
-                  child: Text(
-                    'Tonton Video',
-                    style: GoogleFonts.poppins(
-                      color: Colors.indigo,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      const SizedBox(
+                          width: 8.0), // Memberi jarak antara ikon dan teks
+                      Text(
+                        'Tonton Vidio',
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.bold, color: Colors.white),
+                      ),
+                      const Icon(
+                        Icons.play_arrow,
+                        color: Colors.white,
+                      ),
+                    ],
                   ),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 203, 211, 255),
+                    elevation: 4,
+                    padding: const EdgeInsets.all(10),
+                    backgroundColor: Colors.indigo,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                   ),
                 ),

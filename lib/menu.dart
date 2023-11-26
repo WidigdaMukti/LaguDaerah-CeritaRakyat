@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'cerita_rakyat.dart';
 import 'lagu_daerah.dart';
 
@@ -17,8 +16,9 @@ class _MenuScreenState extends State<MenuScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back,
+          icon: const Icon(
+            Icons.keyboard_arrow_left,
+            size: 34,
             color: Colors.black,
           ),
           onPressed: () {
@@ -34,76 +34,141 @@ class _MenuScreenState extends State<MenuScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => LaguDaerahPage()),
-                );
-              },
-              child: Container(
-                width: 350,
-                height: 250,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3),
-                    ),
-                  ],
-                ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(20),
-                  child: Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      SvgPicture.asset(
-                        'assets/lagu.svg',
-                        fit: BoxFit.cover,
+            Stack(
+              children: [
+                Container(
+                  width: 350,
+                  height: 250,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 4,
+                        blurRadius: 8,
+                        offset: const Offset(0, 4),
                       ),
                     ],
                   ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Transform.scale(
+                          scale: 1.08,
+                          child: Image.asset(
+                            'assets/lagu.png',
+                            fit: BoxFit.cover,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ),
-              ),
+                Positioned(
+                    left: 10,
+                    bottom: 10,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.indigo,
+                        elevation: 4,
+                        padding: EdgeInsets.all(10.0),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => LaguDaerahPage()),
+                        );
+                      },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(width: 4),
+                          Text(
+                            "Lagu Daerah",
+                            style: GoogleFonts.poppins(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
+                          Icon(
+                            Icons.play_arrow,
+                            color: Colors.white,
+                          ),
+                        ],
+                      ),
+                    ))
+              ],
             ),
-            SizedBox(height: 20),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => CeritaRakyatPage()),
-                );
-              },
-              child: Container(
-                width: 350,
-                height: 250,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3),
-                    ),
-                  ],
-                ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(20),
-                  child: Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      SvgPicture.asset(
-                        'assets/cerita.svg',
-                        fit: BoxFit.cover,
+            const SizedBox(height: 20),
+            Stack(
+              children: [
+                Container(
+                  width: 350,
+                  height: 250,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 4,
+                        blurRadius: 8,
+                        offset: const Offset(0, 4),
                       ),
                     ],
                   ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Transform.scale(
+                          scale: 1.08,
+                          child: Image.asset(
+                            'assets/cerita.png',
+                            fit: BoxFit.cover,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ),
-              ),
+                Positioned(
+                    left: 10,
+                    bottom: 10,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.indigo,
+                        elevation: 4,
+                        padding: EdgeInsets.all(10.0),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => CeritaRakyatPage()),
+                        );
+                      },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(width: 4),
+                          Text(
+                            "Cerita Rakyat",
+                            style: GoogleFonts.poppins(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
+                          Icon(
+                            Icons.play_arrow,
+                            color: Colors.white,
+                          ),
+                        ],
+                      ),
+                    ))
+              ],
             ),
           ],
         ),

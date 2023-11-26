@@ -30,12 +30,9 @@ class _SettingsDialogState extends State<SettingsDialog> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
+      backgroundColor: Colors.white,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(24),
-        // side: BorderSide(
-        //   color: Colors.blue, // Warna stroke
-        //   width: 2, // Lebar stroke
-        // ),
       ),
       title: Text(
         'Pengaturan Volume',
@@ -53,6 +50,7 @@ class _SettingsDialogState extends State<SettingsDialog> {
           ),
           SizedBox(height: 32),
           Slider(
+            activeColor: Colors.indigo,
             value: _val,
             min: 0,
             max: 1,
@@ -72,13 +70,23 @@ class _SettingsDialogState extends State<SettingsDialog> {
         ],
       ),
       actions: <Widget>[
-        TextButton(
+        ElevatedButton(
           onPressed: () {
             Navigator.of(context).pop();
           },
           child: Text(
             'Tutup',
-            style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+            style: GoogleFonts.poppins(
+                fontWeight: FontWeight.bold, color: Colors.indigo),
+          ),
+          style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(14),
+              side: const BorderSide(
+                color: Colors.indigo,
+                width: 1,
+              ),
+            ),
           ),
         ),
       ],

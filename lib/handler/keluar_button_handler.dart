@@ -9,8 +9,10 @@ void keluarAplikasi() {
 Future<bool> showExitConfirmationDialog(BuildContext context) async {
   return await showDialog(
     context: context,
+    barrierDismissible: false,
     builder: (context) {
       return AlertDialog(
+        backgroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
@@ -24,22 +26,43 @@ Future<bool> showExitConfirmationDialog(BuildContext context) async {
           style: GoogleFonts.poppins(fontSize: 14),
         ),
         actions: <Widget>[
-          TextButton(
+          ElevatedButton(
             onPressed: () {
               Navigator.of(context).pop(false); // Kembali ke tampilan semula
             },
             child: Text(
               'Tidak',
-              style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+              style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.bold, color: Colors.white),
+            ),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.indigo,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(14),
+                side: const BorderSide(
+                  color: Colors.indigo,
+                  width: 1,
+                ),
+              ),
             ),
           ),
-          TextButton(
+          ElevatedButton(
             onPressed: () {
               keluarAplikasi(); // Keluar dari aplikasi
             },
             child: Text(
               'Ya',
-              style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+              style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.bold, color: Colors.indigo),
+            ),
+            style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(14),
+                side: const BorderSide(
+                  color: Colors.indigo,
+                  width: 1,
+                ),
+              ),
             ),
           ),
         ],

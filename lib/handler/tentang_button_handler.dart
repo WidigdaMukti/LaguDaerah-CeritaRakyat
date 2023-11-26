@@ -6,6 +6,7 @@ void showAboutDialog(BuildContext context) {
     context: context,
     builder: (context) {
       return AlertDialog(
+        backgroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
@@ -47,13 +48,23 @@ void showAboutDialog(BuildContext context) {
           ],
         ),
         actions: <Widget>[
-          TextButton(
+          ElevatedButton(
             onPressed: () {
               Navigator.of(context).pop();
             },
             child: Text(
               'Tutup',
-              style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+              style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.bold, color: Colors.indigo),
+            ),
+            style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(14),
+                side: const BorderSide(
+                  color: Colors.indigo,
+                  width: 1,
+                ),
+              ),
             ),
           ),
         ],

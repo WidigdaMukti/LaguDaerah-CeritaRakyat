@@ -15,7 +15,7 @@ class DetailLaguPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
               child: Text(
                 'Not Angka',
                 style: GoogleFonts.poppins(
@@ -37,23 +37,6 @@ class DetailLaguPage extends StatelessWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent, // Transparent background
-        elevation: 0, // No shadow
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back,
-            color: Colors.black,
-          ),
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-        ),
-        title: Text(laguData['Judul'],
-            style: GoogleFonts.poppins(
-                fontWeight: FontWeight.bold, color: Colors.black)),
-        centerTitle: true,
-      ),
       body: Stack(
         children: [
           SingleChildScrollView(
@@ -61,7 +44,17 @@ class DetailLaguPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  padding: EdgeInsets.all(16.0),
+                  padding: EdgeInsets.fromLTRB(16, 32, 16, 16),
+                  child: Text(
+                    laguData['Judul'],
+                    style: GoogleFonts.poppins(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.indigo),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
                   child: Text(
                     'Informasi Lagu',
                     style: GoogleFonts.poppins(
@@ -76,7 +69,7 @@ class DetailLaguPage extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.all(16.0),
+                  padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
                   child: Text(
                     'Lirik Lagu',
                     style: GoogleFonts.poppins(
@@ -91,9 +84,9 @@ class DetailLaguPage extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.all(16.0),
+                  padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
                   child: Text(
-                    'Terjemahan',
+                    'Terjemahan Lagu',
                     style: GoogleFonts.poppins(
                         fontWeight: FontWeight.bold, fontSize: 20),
                   ),
@@ -134,18 +127,20 @@ class DetailLaguPage extends StatelessWidget {
                     Text(
                       'Play Audio',
                       style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.bold, color: Colors.indigo),
+                          fontWeight: FontWeight.bold, color: Colors.white),
                     ),
                     Icon(
                       Icons.play_arrow,
-                      color: Colors.indigo,
+                      color: Colors.white,
                     ),
                   ],
                 ),
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 203, 211, 255),
+                    elevation: 4,
+                    padding: EdgeInsets.all(10.0),
+                    backgroundColor: Colors.indigo,
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12))),
+                        borderRadius: BorderRadius.circular(20))),
               ),
             ),
           ),

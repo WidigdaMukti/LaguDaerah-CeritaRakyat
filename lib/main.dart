@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'menu.dart';
 import 'handler/pengaturan_button_handler.dart';
 import 'handler/tentang_button_handler.dart' as AboutHandler;
@@ -26,10 +25,6 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        toolbarHeight: 0,
-      ),
       body: Container(
         // decoration: AppTheme.gradientBackground(),
         child: Stack(
@@ -37,10 +32,10 @@ class HomeScreen extends StatelessWidget {
             Align(
               alignment: Alignment.bottomLeft,
               child: FractionalTranslation(
-                translation: Offset(0.0,
+                translation: const Offset(-0.15,
                     0.03), // Sesuaikan dengan seberapa besar bagian bawah yang ingin dipotong
-                child: SvgPicture.asset(
-                  'assets/kids-1.svg',
+                child: Image.asset(
+                  'assets/kids-1.png',
                   width: 280,
                   height: 280,
                 ),
@@ -49,12 +44,12 @@ class HomeScreen extends StatelessWidget {
             Align(
               alignment: Alignment.topRight,
               child: FractionalTranslation(
-                translation: Offset(0.2,
+                translation: const Offset(0.21,
                     0.0), // Sesuaikan dengan seberapa besar bagian bawah yang ingin dipotong
-                child: SvgPicture.asset(
-                  'assets/kids-2.svg',
-                  width: 200,
-                  height: 200,
+                child: Image.asset(
+                  'assets/kids-2.png',
+                  width: 210,
+                  height: 210,
                 ),
               ),
             ),
@@ -62,19 +57,11 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SvgPicture.asset(
-                    "assets/title3.svg",
-                    height: 120,
-                    width: 120,
+                  Image.asset(
+                    "assets/title3.png",
+                    width: 340,
                   ),
-                  // Text(
-                  //   'Cerita Rakyat & Lagu Daerah',
-                  //   style: GoogleFonts.poppins(
-                  //     fontSize: 24,
-                  //     fontWeight: FontWeight.bold,
-                  //   ),
-                  // ),
-                  SizedBox(height: 32),
+                  const SizedBox(height: 28),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
@@ -90,19 +77,19 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      minimumSize: Size(200, 50),
+                      minimumSize: const Size(200, 50),
                       primary: Colors.white,
                       onPrimary: Colors.black,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                        side: BorderSide(
+                        borderRadius: BorderRadius.circular(14),
+                        side: const BorderSide(
                           color: Colors.black,
                           width: 1,
                         ),
                       ),
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () => handleSettingsButtonPress(context),
                     child: Text(
@@ -113,19 +100,19 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      minimumSize: Size(200, 50),
+                      minimumSize: const Size(200, 50),
                       primary: Colors.white,
                       onPrimary: Colors.black,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                        side: BorderSide(
+                        borderRadius: BorderRadius.circular(14),
+                        side: const BorderSide(
                           color: Colors.black,
                           width: 1,
                         ),
                       ),
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () => AboutHandler.showAboutDialog(context),
                     child: Text(
@@ -136,19 +123,19 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      minimumSize: Size(200, 50),
+                      minimumSize: const Size(200, 50),
                       primary: Colors.white,
                       onPrimary: Colors.black,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
-                        side: BorderSide(
+                        side: const BorderSide(
                           color: Colors.black,
                           width: 1,
                         ),
                       ),
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () async {
                       bool exit = await showExitConfirmationDialog(context);
@@ -164,12 +151,13 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      minimumSize: Size(200, 50),
+                      backgroundColor: Colors.white,
+                      minimumSize: const Size(200, 50),
                       primary: Colors.white,
                       onPrimary: Colors.black,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                        side: BorderSide(
+                        borderRadius: BorderRadius.circular(14),
+                        side: const BorderSide(
                           color: Colors.black,
                           width: 1,
                         ),
