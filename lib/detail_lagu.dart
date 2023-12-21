@@ -39,6 +39,21 @@ class DetailLaguPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+          // Gambar di belakang konten utama
+          Positioned(
+              top: 16,
+              right: 16,
+              child: FractionalTranslation(
+                translation: Offset(0.08, 0.0),
+                child: Opacity(
+                  opacity: 0.6,
+                  child: Image.asset(
+                    'assets/not.png',
+                    fit: BoxFit.cover,
+                    width: 220,
+                  ),
+                ),
+              )),
           SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -101,6 +116,24 @@ class DetailLaguPage extends StatelessWidget {
                   ),
                 ),
                 notAngkaSection(), // Panggil bagian not angka yang telah dibuat
+                Container(
+                  padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
+                  child: Text(
+                    'Makna Lagu',
+                    style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(16.0),
+                  child: Text(
+                    laguData['Makna'],
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 16.0,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),

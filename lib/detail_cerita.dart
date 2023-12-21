@@ -53,6 +53,7 @@ class DetailCeritaRakyatPage extends StatelessWidget {
                   padding: const EdgeInsets.all(16.0),
                   child: Text(
                     cerita['teks'],
+                    textAlign: TextAlign.justify,
                     style: GoogleFonts.poppins(),
                   ),
                 ),
@@ -77,6 +78,7 @@ class DetailCeritaRakyatPage extends StatelessWidget {
                     child: Image.asset(
                       cerita['gambar'],
                       fit: BoxFit.cover,
+                      width: 400,
                     ),
                   ),
                 )
@@ -96,6 +98,7 @@ class DetailCeritaRakyatPage extends StatelessWidget {
               padding: const EdgeInsets.all(16.0),
               child: Text(
                 ceritaData['Moral'],
+                textAlign: TextAlign.justify,
                 style: GoogleFonts.poppins(),
               ),
             ),

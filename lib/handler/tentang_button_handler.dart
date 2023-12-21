@@ -31,16 +31,17 @@ void showAboutDialog(BuildContext context) {
                 ),
               ],
             ),
-            SizedBox(height: 10),
+            // SizedBox(height: 10),
+            // Text(
+            //   "Nama Perancang: Imroatun Navi'a Nurul Ihsani",
+            //   style: GoogleFonts.poppins(
+            //     fontSize: 14,
+            //   ),
+            // ),
+            SizedBox(height: 20),
             Text(
-              'Nama Perancang: Nama Anda',
-              style: GoogleFonts.poppins(
-                fontSize: 14,
-              ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Deskripsi: Deskripsi singkat tentang perancang.',
+              "Saya Imroatun Navi'a Nurul Ihsani mempersembahkan aplikasi yang memadukan keindahan lagu tradisional dan kisah dalam setiap cerita rakyatnya.\n\nAplikasi ini diciptakan untuk memperkuat kecintaan kita terhadap kekayaan warisan budaya Jawa Tengah yang tak ternilai agar dapat kita lestarikan dan nikmati bersama generasi mendatang.",
+              textAlign: TextAlign.justify,
               style: GoogleFonts.poppins(
                 fontSize: 14,
               ),
