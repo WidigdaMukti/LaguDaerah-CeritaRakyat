@@ -24,8 +24,8 @@ class CeritaRakyatPage extends StatefulWidget {
 
 class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
   Map<String, List<dynamic>?> ceritaRakyatData = {
-    'Cerita Rakyat Kurikulum': null,
-    'Cerita Rakyat Umum': null,
+    'Sesuai Kurikulum': null,
+    'Umum': null,
   };
 
   @override
@@ -38,9 +38,8 @@ class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
     String jsonData = await rootBundle.loadString('assets/data/cerita.json');
     Map<String, dynamic> data = json.decode(jsonData);
     setState(() {
-      ceritaRakyatData['Cerita Rakyat Kurikulum'] =
-          data['Cerita_Rakyat_Kurikulum'];
-      ceritaRakyatData['Cerita Rakyat Umum'] = data['Cerita_Rakyat_Umum'];
+      ceritaRakyatData['Sesuai Kurikulum'] = data['Cerita_Rakyat_Kurikulum'];
+      ceritaRakyatData['Umum'] = data['Cerita_Rakyat_Umum'];
     });
   }
 

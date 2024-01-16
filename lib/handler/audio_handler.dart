@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lagu_daerah_dan_cerita_rakyat/backsound.dart';
+
+final AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
 
 void showBottomSheetFunction(
   BuildContext context,
   Map<String, dynamic> laguData,
 ) {
-  final AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
+  final AudioManager _audioManager = AudioManager();
 
   void loadAudio(Map<String, dynamic> laguData) {
     final audioUrl = laguData['Audio'];
@@ -31,6 +34,7 @@ void showBottomSheetFunction(
     builder: (BuildContext context) {
       return WillPopScope(
           onWillPop: () async {
+            _audioManager.resume();
             assetsAudioPlayer
                 .stop(); // Menghentikan audio saat bottom sheet ditutup
             return true;

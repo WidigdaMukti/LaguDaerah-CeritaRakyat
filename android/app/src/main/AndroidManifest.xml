@@ -2,7 +2,7 @@
     <application
         android:label="Lagu Daerah dan Cerita Rakyat"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcer">
         <activity
             android:name=".MainActivity"
             android:exported="true"

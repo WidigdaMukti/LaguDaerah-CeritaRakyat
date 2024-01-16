@@ -5,14 +5,19 @@ import 'handler/tentang_button_handler.dart' as AboutHandler;
 import 'handler/keluar_button_handler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'theme.dart';
+import 'backsound.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  final AudioManager _audioManager = AudioManager();
+
   @override
   Widget build(BuildContext context) {
+    _audioManager.start();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),

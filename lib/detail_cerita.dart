@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'handler/vidio_handler.dart';
+import 'backsound.dart';
 
 class DetailCeritaRakyatPage extends StatelessWidget {
+  final AudioManager _audioManager = AudioManager();
   final Map<String, dynamic> ceritaData;
 
   DetailCeritaRakyatPage({required this.ceritaData});
@@ -10,27 +12,6 @@ class DetailCeritaRakyatPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   backgroundColor: Colors.transparent,
-      //   elevation: 0,
-      //   leading: IconButton(
-      //     icon: const Icon(
-      //       Icons.arrow_back,
-      //       color: Colors.black,
-      //     ),
-      //     onPressed: () {
-      //       Navigator.of(context).pop();
-      //     },
-      //   ),
-      //   title: Text(
-      //     ceritaData['Judul'],
-      //     style: GoogleFonts.poppins(
-      //       fontWeight: FontWeight.bold,
-      //       color: Colors.black,
-      //     ),
-      //   ),
-      //   centerTitle: true,
-      // ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -107,6 +88,7 @@ class DetailCeritaRakyatPage extends StatelessWidget {
                 padding: const EdgeInsets.all(16.0),
                 child: ElevatedButton(
                   onPressed: () {
+                    _audioManager.pause();
                     String videoLink = ceritaData['Video'];
                     if (videoLink != '-') {
                       Navigator.push(

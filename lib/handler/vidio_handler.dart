@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:lagu_daerah_dan_cerita_rakyat/backsound.dart';
+
+final AudioManager _audioManager = AudioManager();
 
 class VideoHandler extends StatefulWidget {
   final String videoId;
@@ -69,6 +72,7 @@ class _VideoHandlerState extends State<VideoHandler> {
             color: Colors.white,
           ),
           onPressed: () {
+            _audioManager.resume();
             Navigator.of(context).pop();
           },
         ),

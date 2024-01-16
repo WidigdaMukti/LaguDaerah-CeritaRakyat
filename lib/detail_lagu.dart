@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'handler/audio_handler.dart';
+import 'backsound.dart';
 
 class DetailLaguPage extends StatelessWidget {
   final Map<String, dynamic> laguData;
+  final AudioManager _audioManager = AudioManager();
 
   DetailLaguPage({required this.laguData});
 
@@ -44,7 +46,7 @@ class DetailLaguPage extends StatelessWidget {
               top: 16,
               right: 16,
               child: FractionalTranslation(
-                translation: Offset(0.08, 0.0),
+                translation: Offset(0.08, -0.08),
                 child: Opacity(
                   opacity: 0.6,
                   child: Image.asset(
@@ -146,6 +148,7 @@ class DetailLaguPage extends StatelessWidget {
                   // Aksi saat tombol "Audio Link" ditekan
                   String audio = laguData['Audio'];
                   if (audio != '-') {
+                    _audioManager.pause();
                     showBottomSheetFunction(context, laguData);
                   } else {
                     // Kasus ketika audioLink adalah '-'
