@@ -22,7 +22,8 @@
         }
       ],
       "Video": "https://www.youtube.com/watch?v=ylDYAq_FY9M&ab_channel=nurcahyo",
-      "Moral": "Pesan moral dari Asal Usul Kota Semarang adalah kejujuran dan kerja keras ialah kunci untuk menuju kemenangan."
+      "Moral": "Pesan moral dari Asal Usul Kota Semarang adalah kejujuran dan kerja keras ialah kunci untuk menuju kemenangan.",
+      "Gambar": "assets/img/cerita/sesuai-kurikulum/1.png"
     },
     {
       "Judul": "Dampo Awang",
@@ -40,7 +41,8 @@
         }
       ],
       "Video": "https://www.youtube.com/watch?v=nqvzhK6kUH0",
-      "Moral": "Pesan moral dari Dampo Awang adalah janganlah semena-mena terhadap orang lain serta bertuturlah dengan baik dan sopan."
+      "Moral": "Pesan moral dari Dampo Awang adalah janganlah semena-mena terhadap orang lain serta bertuturlah dengan baik dan sopan.",
+      "Gambar": "assets/img/cerita/sesuai-kurikulum/2.png"
     },
     {
       "Judul": "Legenda Bledug Kuwu",
@@ -50,7 +52,8 @@
         }
       ],
       "Video": "-",
-      "Moral": "Pesan moral dari Legenda Bledug Kuwu adalah perlunya mengorbankan kepentingan pribadi demi kebaikan bersama. Keajaiban sejati terjadi ketika hati murni dan tindakan dipenuhi oleh cinta dan kedermawanan."
+      "Moral": "Pesan moral dari Legenda Bledug Kuwu adalah perlunya mengorbankan kepentingan pribadi demi kebaikan bersama. Keajaiban sejati terjadi ketika hati murni dan tindakan dipenuhi oleh cinta dan kedermawanan.",
+      "Gambar": "assets/img/cerita/sesuai-kurikulum/3.png"
     },
     {
       "Judul": "Legenda Joko Kendil",
@@ -72,7 +75,8 @@
         }
       ],
       "Video": "https://www.youtube.com/watch?v=5l6VXnVldhY",
-      "Moral": "Pesan moral dari Legenda Joko Kendil adalah teruslah berusaha dan bersabar dalam hidup karena nantinya akan memperoleh kebahagian yang sangat luar biasa."
+      "Moral": "Pesan moral dari Legenda Joko Kendil adalah teruslah berusaha dan bersabar dalam hidup karena nantinya akan memperoleh kebahagian yang sangat luar biasa.",
+      "Gambar": "assets/img/cerita/sesuai-kurikulum/4.png"
     },
     {
       "Judul": "Legenda Sendang Sani",
@@ -83,7 +87,8 @@
         }
       ],
       "Video": "-",
-      "Moral": "Pesan moral dari Legenda Sendang Sani adalah apabila mendapat suatu kepercayaan untuk melaksanakan suatu pekerjaan hendaknya dilaksanakan sebaik-baiknya dengan penuh rasa tanggung jawab."
+      "Moral": "Pesan moral dari Legenda Sendang Sani adalah apabila mendapat suatu kepercayaan untuk melaksanakan suatu pekerjaan hendaknya dilaksanakan sebaik-baiknya dengan penuh rasa tanggung jawab.",
+      "Gambar": "assets/img/cerita/sesuai-kurikulum/5.png"
     }
   ],
   "Cerita_Rakyat_Umum": [
@@ -111,7 +116,8 @@
         }
       ],
       "Video": "https://www.youtube.com/watch?v=pcfzWFQbTIY&ab_channel=BangAsenk",
-      "Moral": "Pesan moral dari Aji Saka dan Asal Usul Aksara Jawa adalah memegang dan menjalankan amanat hendaknya dilakukan sebaik dan semampu yang dapat kita lakukan. Orang yang memegang dan menjalankan amanat dengan baik akan mendapatkan kehormatan di kemudian hari."
+      "Moral": "Pesan moral dari Aji Saka dan Asal Usul Aksara Jawa adalah memegang dan menjalankan amanat hendaknya dilakukan sebaik dan semampu yang dapat kita lakukan. Orang yang memegang dan menjalankan amanat dengan baik akan mendapatkan kehormatan di kemudian hari.",
+      "Gambar": "assets/img/cerita/umum/1.png"
     },
     {
       "Judul": "Asal Usul Baturaden",
@@ -129,7 +135,8 @@
         }
       ],
       "Video": "https://www.youtube.com/watch?v=h1Nl9H7NA90&ab_channel=DongengKita",
-      "Moral": "Pesan moral dari Asal Usul Baturaden adalah berjuanglah untuk apa yang kamu inginkan. Jika kamu berbuat baik dan berusaha dengan sungguh-sungguh maka kamu akan berhasil di masa yang akan datang."
+      "Moral": "Pesan moral dari Asal Usul Baturaden adalah berjuanglah untuk apa yang kamu inginkan. Jika kamu berbuat baik dan berusaha dengan sungguh-sungguh maka kamu akan berhasil di masa yang akan datang.",
+      "Gambar": "assets/img/cerita/umum/2.png"
     },
     {
       "Judul": "Asal Usul Rawa Pening",
@@ -151,7 +158,8 @@
         }
       ],
       "Video": "https://www.youtube.com/watch?v=87u_I9efLos&ab_channel=halidaJazlyn",
-      "Moral": "Pesan moral dari Asal Usul Rawa Pening adalah hargai orang lain dan jangan saling membenci. Jangan pernah hanya menilai seseorang dari penampilan luarnya saja. Selain itu, tolong menolonglah tanpa memandang latar belakang dan status sosial."
+      "Moral": "Pesan moral dari Asal Usul Rawa Pening adalah hargai orang lain dan jangan saling membenci. Jangan pernah hanya menilai seseorang dari penampilan luarnya saja. Selain itu, tolong menolonglah tanpa memandang latar belakang dan status sosial.",
+      "Gambar": "assets/img/cerita/umum/3.png"
     },
     {
       "Judul": "Kisah Jaka Tarub dan 7 Bidadari",
@@ -169,7 +177,8 @@
         }
       ],
       "Video": "https://www.youtube.com/watch?v=NiV8WhSN9Qg&ab_channel=DongengKita",
-      "Moral": "Pesan moral dari Kisah Jaka Tarub dan 7 Bidadari adalah tepati janji yang telah kamu ucapkan, tidak menepati janji hanya akan membawa keburukan dimasa yang akan datang. Jangan mudah dalam mengucapkan janji atau sumpah. Selain itu, jika menginginkan sesuatu, maka berusahalah untuk mendapatkannya dengan cara yang baik. "
+      "Moral": "Pesan moral dari Kisah Jaka Tarub dan 7 Bidadari adalah tepati janji yang telah kamu ucapkan, tidak menepati janji hanya akan membawa keburukan dimasa yang akan datang. Jangan mudah dalam mengucapkan janji atau sumpah. Selain itu, jika menginginkan sesuatu, maka berusahalah untuk mendapatkannya dengan cara yang baik. ",
+      "Gambar": "assets/img/cerita/umum/4.png"
     },
     {
       "Judul": "Kisah Jaka Tingkir",
@@ -191,7 +200,8 @@
         }
       ],
       "Video": "https://www.youtube.com/watch?v=2lqVdLTjRJw&ab_channel=DongengKita",
-      "Moral": "Pesan moral dari Kisah Joko Tingkir adalah kita harus berusaha menebus kesalahan kita dengan melakukan perbuatan baik dan terpuji. Dalam hidup ini juga sebaiknya saling memaafkan kesalahan orang lain."
+      "Moral": "Pesan moral dari Kisah Joko Tingkir adalah kita harus berusaha menebus kesalahan kita dengan melakukan perbuatan baik dan terpuji. Dalam hidup ini juga sebaiknya saling memaafkan kesalahan orang lain.",
+      "Gambar": "assets/img/cerita/umum/5.png"
     },
     {
       "Judul": "Kisah Roro Jonggrang dan Asal Usul candi Prambanan",
@@ -222,7 +232,8 @@
         }
       ],
       "Video": "https://www.youtube.com/watch?v=3IZOoyLc8Fk&ab_channel=DongengKita",
-      "Moral": "Pesan moral dari sudut pandang Bandung Bondowoso adalah Jangan berbuat curang untuk mewujudkan apa yang menjadi keinginan kita karena akan memperoleh buah atas apa yang kita lakukan di kemudian hari. Selain itu, Jika kita menjadi seorang pemimpin, seorang pemimpin tidak boleh menjadi jahat dan semena – mena terhadap rakyat karena tugas pemimpin adalah menjadi pelindung rakyat.\n\nPesan moral dari sudut pandang Roro Jonggrang adalah Berusaha melawan terhadap sesuatu yang tidak kita suka atau tidak kita inginkan adalah keharusan, namun kita juga harus memahami resiko dibaliknya."
+      "Moral": "Pesan moral dari sudut pandang Bandung Bondowoso adalah Jangan berbuat curang untuk mewujudkan apa yang menjadi keinginan kita karena akan memperoleh buah atas apa yang kita lakukan di kemudian hari. Selain itu, Jika kita menjadi seorang pemimpin, seorang pemimpin tidak boleh menjadi jahat dan semena – mena terhadap rakyat karena tugas pemimpin adalah menjadi pelindung rakyat.\n\nPesan moral dari sudut pandang Roro Jonggrang adalah Berusaha melawan terhadap sesuatu yang tidak kita suka atau tidak kita inginkan adalah keharusan, namun kita juga harus memahami resiko dibaliknya.",
+      "Gambar": "assets/img/cerita/umum/6.png"
     },
     {
       "Judul": "Kisah Roro Mendut",
@@ -244,7 +255,8 @@
         }
       ],
       "Video": "https://www.youtube.com/watch?v=70OBzzCU1JY&ab_channel=DitaPuti",
-      "Moral": "Pesan moral dari Kisah Roro Mendut adalah jangan memaksakan kehendak pada orang lain. Belajarlah menerima keputusan orang lain walau itu pahit. Selain itu, harta, pangkat, dan jabatan bukanlah jaminan untuk mendapatkan cinta sejati seseorang."
+      "Moral": "Pesan moral dari Kisah Roro Mendut adalah jangan memaksakan kehendak pada orang lain. Belajarlah menerima keputusan orang lain walau itu pahit. Selain itu, harta, pangkat, dan jabatan bukanlah jaminan untuk mendapatkan cinta sejati seseorang.",
+      "Gambar": "assets/img/cerita/umum/7.png"
     },
     {
       "Judul": "Kisah Timun Mas",
@@ -266,7 +278,8 @@
         }
       ],
       "Video": "https://youtu.be/l3NlcLafVa4?si=OaEovSrIQcbtwIZ",
-      "Moral": "Pesan moral dari Kisah Timun Mas adalah akan ada solusi dari apapun masalah yang sedang kita hadapi dan kita harus menepati janji supaya tidak mengalami kekhawatiran dalam hidup. "
+      "Moral": "Pesan moral dari Kisah Timun Mas adalah akan ada solusi dari apapun masalah yang sedang kita hadapi dan kita harus menepati janji supaya tidak mengalami kekhawatiran dalam hidup. ",
+      "Gambar": "assets/img/cerita/umum/8.png"
     },
     {
       "Judul": "Legenda Kera Sakti di Puncak Gunung Slamet",
@@ -277,7 +290,8 @@
         }
       ],
       "Video": "-",
-      "Moral": "Pesan moral dari Legenda Kera Sakti di Puncak Gunung Slamet adalah seburuk apapun orang memperlakukan kita, kita harus menjalani hidup dengan sebaik mungkin dan tetap ikhlas karena mungkin Tuhan sudah menakdirkan kita bertemu orang – orang seperti itu."
+      "Moral": "Pesan moral dari Legenda Kera Sakti di Puncak Gunung Slamet adalah seburuk apapun orang memperlakukan kita, kita harus menjalani hidup dengan sebaik mungkin dan tetap ikhlas karena mungkin Tuhan sudah menakdirkan kita bertemu orang – orang seperti itu.",
+      "Gambar": "assets/img/cerita/umum/9.png"
     }
   ]
 }

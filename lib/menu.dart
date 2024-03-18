@@ -59,7 +59,7 @@ class _MenuScreenState extends State<MenuScreen> {
                         Transform.scale(
                           scale: 1.08,
                           child: Image.asset(
-                            'assets/lagu.png',
+                            'assets/img/menu-lagu.png',
                             fit: BoxFit.cover,
                           ),
                         )
@@ -127,7 +127,7 @@ class _MenuScreenState extends State<MenuScreen> {
                         Transform.scale(
                           scale: 1.08,
                           child: Image.asset(
-                            'assets/cerita.png',
+                            'assets/img/menu-cerita.png',
                             fit: BoxFit.cover,
                           ),
                         )

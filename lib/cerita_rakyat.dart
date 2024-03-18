@@ -80,32 +80,32 @@ class _CeritaRakyatPageState extends State<CeritaRakyatPage> {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [Colors.transparent, Colors.black],
-                      stops: [0.1, 1.0],
+                      stops: [0.08, 0.8],
                     ).createShader(bounds);
                   },
                   blendMode: BlendMode.dstIn,
                   child: Image.asset(
-                    'assets/back-cerita.png',
+                    'assets/img/menu-cerita.png',
                   ),
                 )),
-            Positioned.fill(
-              child: Align(
-                alignment: Alignment.bottomLeft,
-                child: Image.asset(
-                  'assets/kids-6.png',
-                  height: 200,
-                ),
-              ),
-            ),
-            Positioned.fill(
-              child: Align(
-                alignment: Alignment.bottomRight,
-                child: Image.asset(
-                  'assets/kids-5.png',
-                  height: 150,
-                ),
-              ),
-            ),
+            // Positioned.fill(
+            //   child: Align(
+            //     alignment: Alignment.bottomLeft,
+            //     child: Image.asset(
+            //       'assets/kids-6.png',
+            //       height: 200,
+            //     ),
+            //   ),
+            // ),
+            // Positioned.fill(
+            //   child: Align(
+            //     alignment: Alignment.bottomRight,
+            //     child: Image.asset(
+            //       'assets/kids-5.png',
+            //       height: 150,
+            //     ),
+            //   ),
+            // ),
             Padding(
               padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
               child: ListView(

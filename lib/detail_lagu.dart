@@ -21,14 +21,17 @@ class DetailLaguPage extends StatelessWidget {
               child: Text(
                 'Not Angka',
                 style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.bold, fontSize: 20),
+                    fontWeight: FontWeight.bold, fontSize: 24),
               ),
             ),
             Container(
               padding: EdgeInsets.all(16.0),
-              child: Image.asset(
-                laguData['Not_Angka'], // Path gambar not angka
-                fit: BoxFit.cover, // Sesuaikan dengan kebutuhan Anda
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(12), // Border radius 12
+                child: Image.asset(
+                  laguData['Not_Angka'], // Path gambar not angka
+                  fit: BoxFit.cover, // Sesuaikan dengan kebutuhan Anda
+                ),
               ),
             ),
           ],
@@ -46,11 +49,11 @@ class DetailLaguPage extends StatelessWidget {
               top: 16,
               right: 16,
               child: FractionalTranslation(
-                translation: Offset(0.08, -0.08),
+                translation: Offset(0.01, 0.3),
                 child: Opacity(
                   opacity: 0.6,
                   child: Image.asset(
-                    'assets/not.png',
+                    laguData['Gambar'],
                     fit: BoxFit.cover,
                     width: 220,
                   ),
@@ -61,13 +64,21 @@ class DetailLaguPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  padding: EdgeInsets.fromLTRB(16, 32, 16, 16),
+                  width: double.infinity,
+                  margin: EdgeInsets.fromLTRB(16, 16, 16, 4),
+                  padding: EdgeInsets.fromLTRB(4, 6, 4, 8),
+                  decoration: BoxDecoration(
+                    color: Colors.indigo, // Warna container indigo
+                    borderRadius: BorderRadius.circular(12), // Border radius 12
+                  ),
                   child: Text(
                     laguData['Judul'],
+                    textAlign: TextAlign.center,
                     style: GoogleFonts.poppins(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.indigo),
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white, // Warna teks putih
+                    ),
                   ),
                 ),
                 Container(
@@ -75,7 +86,7 @@ class DetailLaguPage extends StatelessWidget {
                   child: Text(
                     'Informasi Lagu',
                     style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.bold, fontSize: 20),
+                        fontWeight: FontWeight.bold, fontSize: 24),
                   ),
                 ),
                 Container(
@@ -90,7 +101,7 @@ class DetailLaguPage extends StatelessWidget {
                   child: Text(
                     'Lirik Lagu',
                     style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.bold, fontSize: 20),
+                        fontWeight: FontWeight.bold, fontSize: 24),
                   ),
                 ),
                 Container(
@@ -105,7 +116,7 @@ class DetailLaguPage extends StatelessWidget {
                   child: Text(
                     'Terjemahan Lagu',
                     style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.bold, fontSize: 20),
+                        fontWeight: FontWeight.bold, fontSize: 24),
                   ),
                 ),
                 Container(
@@ -123,7 +134,7 @@ class DetailLaguPage extends StatelessWidget {
                   child: Text(
                     'Makna Lagu',
                     style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.bold, fontSize: 20),
+                        fontWeight: FontWeight.bold, fontSize: 24),
                   ),
                 ),
                 Container(
@@ -136,6 +147,9 @@ class DetailLaguPage extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(
+                  height: 60,
+                )
               ],
             ),
           ),

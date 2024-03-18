@@ -84,23 +84,23 @@ class _LaguDaerahPageState extends State<LaguDaerahPage> {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [Colors.transparent, Colors.black],
-                      stops: [0.1, 1.0],
+                      stops: [0.08, 0.8],
                     ).createShader(bounds);
                   },
                   blendMode: BlendMode.dstIn,
                   child: Image.asset(
-                    'assets/back-lagu.png',
+                    'assets/img/menu-lagu.png',
                   ),
                 )),
-            Positioned.fill(
-              child: Align(
-                alignment: Alignment.bottomRight,
-                child: Image.asset(
-                  'assets/kids-4.png',
-                  height: 200,
-                ),
-              ),
-            ),
+            // Positioned.fill(
+            //   child: Align(
+            //     alignment: Alignment.bottomRight,
+            //     child: Image.asset(
+            //       'assets/kids-4.png',
+            //       height: 200,
+            //     ),
+            //   ),
+            // ),
             Padding(
               padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
               child: ListView(
